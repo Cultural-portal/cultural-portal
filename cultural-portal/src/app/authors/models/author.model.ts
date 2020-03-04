@@ -11,7 +11,7 @@ export interface Author {
 
 export interface Biography {
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
   title: string;
   text: string;
 }

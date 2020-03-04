@@ -1,0 +1,30 @@
+{
+  "authorsEN": [
+    {
+      "name": "Maksim Tank",
+      "birth": "17 September 1912 – 7 August 1995",
+      "death": "7 August 1995",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2012._Stamp_of_Belarus_36-2012-09-05-m.jpg/330px-2012._Stamp_of_Belarus_36-2012-09-05-m.jpg",
+      "biography": [
+        {
+          "startDate": "17 September 1912 – 7 August 1995",
+          "title": "Birth",
+          "text": "Was born 17 September 1912 Piĺkaŭščyna, Russian Empire"
+        },
+        {
+          "startDate": "7 August 1995",
+          "title": "Death",
+          "text": "Dead (aged 82) Minsk, Belarus"
+        }
+      ],
+      "works": [
+        "On Stages",
+        "The Cranberry Colour"
+      ],
+      "video": "https://www.youtube.com/watch?v=hsAADM21bx8",
+      "place": "Minsk"
+    }
+  ],
+  "authorsRU": [],
+  "authorsBEL": []
+}
