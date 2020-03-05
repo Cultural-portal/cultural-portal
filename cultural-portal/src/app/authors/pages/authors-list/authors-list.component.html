@@ -1,7 +1,10 @@
-<p>authors-list works!</p>
+<mat-list>
+  <mat-list-item *ngFor="let author of (authors |async)"> {{author.name}} </mat-list-item>
+</mat-list>
 
-<ul>
-  <li *ngFor="let author of (authors |async)">
-    {{author.name}}
-  </li>
-</ul>
+<li *ngFor="let author of (authors |async)"> {{author.name}} </li>
+<mat-list>
+  <mat-list-item role="listitem"> Pepper </mat-list-item>
+  <mat-list-item role="listitem"> Salt </mat-list-item>
+  <mat-list-item role="listitem"> Paprika </mat-list-item>
+ </mat-list>
