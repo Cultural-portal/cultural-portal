@@ -1,1 +1,14 @@
-<p>author-info works!</p>
+<div class='wrapper-author' *ngFor="let author of authorsRU">
+    <h1> {{ author.name }} {{ author.surname }} </h1>
+    <h2>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</h2>
+    <p> {{ author.birth | date:"dd/MM/yyyy" }} - {{ author.death | date:"dd/MM/yyyy" }} </p>
+    <img [src]="author.img">
+    form of timeline
+    <ul>
+        <li *ngFor="let item of author.works">{{item}}</li>
+    </ul>
+    <video [poster]="author.img" controls (click)='getVideo(author.video)'>
+        <source src="author.video">
+    </video>
+    <!-- <iframe [src]='getMap(author.place)'></iframe> -->
+</div>
