@@ -1,2 +1,14 @@
-
-{{author.name}}
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{author.surname}} {{author.name}}</mat-card-title>
+    <mat-card-subtitle>{{author.realSurname}} {{author.realName}}</mat-card-subtitle>
+    <mat-card-title>{{author.birth | date}} - {{author.death | date }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="author.img" alt="Photo of a {{author.realSurname}}">
+  <mat-card-content>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>...</button>
+  </mat-card-actions>
+</mat-card>
