@@ -9,10 +9,9 @@ import { Authors } from '../../models/author.model';
 export class AuthorItemComponent implements OnInit {
   @Input() public author: Authors;
 
-
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
 }
