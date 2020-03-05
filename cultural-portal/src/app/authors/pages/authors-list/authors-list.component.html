@@ -1,1 +1,7 @@
 <p>authors-list works!</p>
+
+<ul>
+  <li *ngFor="let author of (authors |async)">
+    {{author.name}}
+  </li>
+</ul>
