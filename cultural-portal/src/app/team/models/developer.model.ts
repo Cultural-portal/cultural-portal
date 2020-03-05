@@ -1,5 +1,5 @@
 export interface Developer {
-  nickname: string;
+  name: string;
   github: string;
   img: string;
   role: string;

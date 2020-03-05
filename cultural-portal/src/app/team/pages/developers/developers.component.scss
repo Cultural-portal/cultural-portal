@@ -1,0 +1,9 @@
+.developers {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
