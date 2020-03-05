@@ -3,7 +3,7 @@ export interface DeveloperActivity {
   activityList: Activity[];
 }
 
-interface Activity {
+export interface Activity {
   hours: number;
   description: string;
 }
