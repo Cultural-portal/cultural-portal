@@ -1,17 +1,26 @@
-export interface Author {
+export interface AuthorsRoot {
+  authorsEN: Authors[];
+  authorsRU: Authors[];
+  authorsBE: Authors[];
+}
+
+export interface Authors {
   name: string;
-  birth: Date;
-  death?: Date;
+  surname: string;
+  realName: string;
+  realSurname: string;
+  realPatronymic: string;
+  birth: string;
+  death: string;
   img: string;
   biography: Biography[];
   works: string[];
-  video?: string;
-  place?: string;
+  video: string;
+  place: string;
 }
 
-export interface Biography {
-  startDate: Date;
-  endDate?: Date;
+export  interface Biography {
   title: string;
-  text: string;
+  content: string;
+  year: string;
 }
