@@ -1,10 +1,3 @@
-<mat-list>
-  <mat-list-item *ngFor="let author of (authors |async)"> {{author.name}} </mat-list-item>
-</mat-list>
-
-<li *ngFor="let author of (authors |async)"> {{author.name}} </li>
-<mat-list>
-  <mat-list-item role="listitem"> Pepper </mat-list-item>
-  <mat-list-item role="listitem"> Salt </mat-list-item>
-  <mat-list-item role="listitem"> Paprika </mat-list-item>
- </mat-list>
+<ng-container *ngFor="let author of (authors |async)">
+  <app-author-item [author]= "author"></app-author-item>
+</ng-container>
