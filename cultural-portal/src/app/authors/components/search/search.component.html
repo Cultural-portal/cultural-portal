@@ -1,1 +1,32 @@
-<p>search works!</p>
+<mat-card>
+  <mat-form-field>
+    <mat-label>Choose lang</mat-label>
+    <mat-select (selectionChange)="onChangLang($event.value)">
+      <mat-option
+        *ngFor="let lang of listLng"
+        [value]="lang"
+      >
+        {{ lang }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <mat-select  (selectionChange)="onChangLang($event.value)">
+      <mat-option
+        *ngFor="let search of listSearch"
+        [value]="search"
+      >
+        {{ search }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>enter text</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+
+
+</mat-card>

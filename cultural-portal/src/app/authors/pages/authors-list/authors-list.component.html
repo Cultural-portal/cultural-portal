@@ -1,3 +1,9 @@
-<ng-container *ngFor="let author of (authors |async)">
-  <app-author-item [author]= "author"></app-author-item>
+<ng-container>
+  <app-search></app-search>
 </ng-container>
+<mat-divider></mat-divider>
+
+<ng-container  *ngFor="let author of authors | async">
+  <app-author-item [author]="author"></app-author-item>
+</ng-container>
+
