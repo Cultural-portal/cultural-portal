@@ -3,7 +3,7 @@
     <h2>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</h2>
     <p> {{ author.birth | date:"dd/MM/yyyy" }} - {{ author.death | date:"dd/MM/yyyy" }} </p>
     <img [src]="author.img">
-    form of timeline
+    <app-timeline></app-timeline>
     <ul>
         <li *ngFor="let item of author.works">{{item}}</li>
     </ul>
