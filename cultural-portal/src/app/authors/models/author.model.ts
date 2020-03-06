@@ -13,6 +13,7 @@ export interface Authors {
   birth: string;
   death: string;
   img: string;
+  summaryBiography: string;
   biography: Biography[];
   works: string[];
   video: string;

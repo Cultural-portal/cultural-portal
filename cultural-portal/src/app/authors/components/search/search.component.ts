@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
 
   public controlSearchInput: FormControl = new FormControl('');
 
-  public searchText: string = 'Максим';
+  public searchText: string = '';
   public searchText$: BehaviorSubject<string> = new BehaviorSubject(this.searchText);
 
 
@@ -31,7 +31,6 @@ export class SearchComponent implements OnInit {
   public ngOnInit(): void {
     this.controlSearchInput.valueChanges.pipe(
       debounceTime(700),
-      filter(val => val.length > 2)
     ).subscribe(
       textInput => {
         this.searchText = textInput;

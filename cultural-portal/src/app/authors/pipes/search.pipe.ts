@@ -11,18 +11,22 @@ export class SearchPipe implements PipeTransform {
     searchText: string,
     searchType: string
   ): Authors[] {
-    if (!items) {
+    if ((!items) || (searchType === '')) {
       return null;
     }
     console.log(searchText, searchType);
     switch (searchType) {
       case Search.city:
         return items.filter(value => {
-          return value.place.toLowerCase().includes(searchText.toLowerCase());
+          const search: boolean = value.biography.some(item =>
+            item.title.toLowerCase().includes(searchText.toLowerCase()));
+          return search;
         });
+
       case Search.name:
         return items.filter(value => {
-          return value.name.toLowerCase().includes(searchText.toLowerCase());
+          return (value.name + value.realName + value.surname + value.realSurname )
+          .toLowerCase().includes(searchText.toLowerCase());
         });
 
       default:
