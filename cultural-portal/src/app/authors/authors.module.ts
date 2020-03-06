@@ -7,11 +7,12 @@ import { AuthorInfoComponent } from './pages/author-info/author-info.component';
 import { SearchPipe } from './pipes/search.pipe';
 import { SharedModule } from '../shared/shared.module';
 import { AuthorItemComponent } from './components/autor-item/author-item.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
 @NgModule({
-  declarations: [AuthorsListComponent, AuthorInfoComponent, SearchPipe, AuthorItemComponent],
+  declarations: [AuthorsListComponent, AuthorInfoComponent, SearchPipe, AuthorItemComponent, SearchComponent],
   imports: [
     CommonModule,
     AuthorsRoutingModule,
