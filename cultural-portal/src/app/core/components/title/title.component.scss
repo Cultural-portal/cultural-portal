@@ -1,0 +1,34 @@
+.header {
+    height: 100vh;
+    background-image: url('../../../../assets/images/books.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        color: rgb(180, 178, 166);
+
+        .header__title-area {
+            width: 100%;
+            margin-top: calc((100vh - 60px) / 2);
+
+            background-color: rgba(31, 29, 27, 0.699);
+
+            .header__title {
+                text-align: center;
+                padding-top: 20px;
+                font-size: 3em;
+                letter-spacing: 0.1em;
+                color: rgb(228, 216, 201);
+            }
+        }
+        mat-form-field {
+            align-self: flex-end;
+            margin-right: 30px;
+        }
+    }
+}

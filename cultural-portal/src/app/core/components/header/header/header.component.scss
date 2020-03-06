@@ -1,0 +1,18 @@
+.header__navigation {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    background-color: rgba(37, 26, 16, 0.767);
+    color: rgb(180, 178, 166);
+
+    z-index: 100;
+}
+.header__navigation_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 30px;
+
+    list-style: none;
+    font-size: 1em;
+}

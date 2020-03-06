@@ -1,0 +1,32 @@
+.description {
+    background-color: rgb(224, 215, 194);
+    color: rgb(68, 58, 47);
+    
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 0;
+
+        .description__title {
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+        .description__text {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 40px;
+        }
+        .about-literature {
+            padding: 0 20px;
+            border-left: 1px dotted rgb(133, 131, 123);
+            border-right: 1px dotted rgb(133, 131, 123);
+        }
+        p {
+            width: 30%;
+            min-width: 60px;
+            font-size: 1.1em;
+        }
+    }
+}
