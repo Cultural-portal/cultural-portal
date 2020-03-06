@@ -1,7 +1,7 @@
 <mat-card>
   <mat-form-field>
     <mat-label>Choose lang</mat-label>
-    <mat-select (selectionChange)="onChangLang($event.value)">
+    <mat-select (selectionChange)="onChangLang($event.value)" [(value)]="language">
       <mat-option
         *ngFor="let lang of listLng"
         [value]="lang"
@@ -13,7 +13,7 @@
 
   <mat-form-field>
     <mat-label>Search</mat-label>
-    <mat-select  (selectionChange)="onChangLang($event.value)">
+    <mat-select  (selectionChange)="onChangeTypeSearch($event.value)" [(value)]="search">
       <mat-option
         *ngFor="let search of listSearch"
         [value]="search"
@@ -22,10 +22,9 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-
   <mat-form-field>
     <mat-label>enter text</mat-label>
-    <input matInput placeholder="">
+    <input matInput type="text" [formControl]="controlSearchInput">
   </mat-form-field>
 
 

@@ -3,7 +3,12 @@
 </ng-container>
 <mat-divider></mat-divider>
 
-<ng-container  *ngFor="let author of authors | async">
+<ng-container
+  *ngFor="
+    let author of authors
+      | async
+      | search: (searchText$ | async):(searchType$ | async)
+  "
+>
   <app-author-item [author]="author"></app-author-item>
 </ng-container>
-

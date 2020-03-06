@@ -7,6 +7,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MatListModule,
     MatCardModule,
     MatButtonModule,
@@ -24,6 +26,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [
     FormsModule,
+    ReactiveFormsModule,
     MatListModule,
     MatCardModule,
     MatButtonModule,
