@@ -6,7 +6,7 @@ import { Authors } from 'src/app/authors/models/author.model';
 })
 export class RandomAuthorService {
 
-  // private min: number = 1;
+  // private min: number = 0;
   // private max: number = 8;
   // private authors: Authors[];
 
