@@ -6,14 +6,14 @@ import { Authors } from 'src/app/authors/models/author.model';
 })
 export class RandomAuthorService {
 
-  // private min: number = 0;
-  // private max: number = 8;
-  // private authors: Authors[];
+  private authors: Authors[];
+  private min: number = 0;
+  private max: number = this.authors.length;
 
   constructor() { }
 
-  // public randomAuthor(): Authors {
-  //   return this.authors[Math.floor(Math.random() * (this.max - this.min)) + this.min]; 
-  //   //Максимум не включается, минимум включается
-  // }
+  public randomAuthor(): Authors {
+    return this.authors[Math.floor(Math.random() * (this.max - this.min)) + this.min]; 
+    //Максимум не включается, минимум включается
+  }
 }
