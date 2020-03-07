@@ -222,144 +222,144 @@
     },
     {
       "id": 3,
-      "name": "Якуб",
-      "surname": "Колас",
-      "realName": "Константин ",
-      "realSurname": "Мицкевич",
-      "realPatronymic": "Михайлович",
+      "name": "Yakub",
+      "surname": "Kolas",
+      "realName": "Kanstancin ",
+      "realSurname": "Mickievič",
+      "realPatronymic": "Mihailovich",
       "birth": "-2750544000",
       "death": "-422409600",
       "img": "https://upload.wikimedia.org/wikipedia/commons/9/99/Yakub_Kolas.jpg",
-      "summaryBiography": "Белорусский советский писатель, поэт и переводчик, общественный деятель. Один из классиков и основоположников новой белорусской литературы. Народный поэт Белорусской ССР (1926). Академик АН Белорусской ССР (1928). Член СП СССР (1934). Заслуженный деятель науки Белорусской ССР (1944). Член ВКП(б) с 1945 года.",
+      "summaryBiography": "Belarusian writer, People's Poet of the Byelorussian SSR (1926), and member (1928) and vice-president (from 1929) of the Belarusian Academy of Sciences.",
       "biography": [
         {
-          "title": "Дата рождения.",
-          "content": "Родился в деревне Окинчицы (сегодня – территория города Столбцы).",
+          "title": "Date of birth.",
+          "content": "Born in the village of Okinchitsy (today-the territory of the city of Stolbci).",
           "year": "1882"
         },
         {
-          "title": "Несвижская учительскуая семинария.",
-          "content": "Окончил сначала народную школу, а затем, в 1902 году, Несвижскую учительскую семинарию.",
+          "title": "Nesvizh teachers' Seminary.",
+          "content": "He Graduated first from the people's school, and then, in 1902, from the Nesvizh teachers' Seminary.",
           "year": "1902"
         },
         {
-          "title": "Организатор незаконного учительского съезда.",
-          "content": "Был одним из организаторов, а также участником незаконного учительского съезда 1906 года. Съезд разогнала полиция. А Мицкевичу запретили заниматься учительской деятельностью.",
+          "title": "Organizer of an illegal teachers' Congress.",
+          "content": "Was one of the organizers, as well as a participant in the illegal teachers' Congress of 1906. The Congress was dispersed by the police. And Mickiewicz was banned from teaching.",
           "year": "1906"
         },
         {
-          "title": "Открыл частную школу.",
-          "content": "В 1906-1907 году в деревне Смолярня открыл частную школу.",
+          "title": "Opened a private school.",
+          "content": "In 1906-1907, a private school was opened in the village of Smolarnya.",
           "year": "1906"
         },
         {
-          "title": "Переехал в Вильню.",
-          "content": "В 1907 переехал в Вильню, где работал заведующим отдела литературы в “Нашай Ніве”, но по указанию полиции уволился оттуда и покинул город.",
+          "title": "Moved to Vilna.",
+          "content": "In 1907 he moved to Vilna, where he worked as the head of the literature Department at Nasha Niva but the police quit and left town.",
           "year": "1907"
         },
         {
-          "title": "Работал учителем.",
-          "content": "В начале 1908 года некоторое время работал учителем в деревне Сани, после чего был арестован по обвинению в революционной деятельности, направленной на ликвидацию действующего государственного строя.",
+          "title": "Worked as a teacher.",
+          "content": "At the beginning of 1908, he worked for a while as a teacher in the village of Sani, after which he was arrested on charges of revolutionary activities aimed at the elimination of the current state system.",
           "year": "1908"
         },
         {
-          "title": "Осуждён на 3 года.",
-          "content": "Всё время заключения (1908-1911) провёл в Минской тюрьме. На протяжении всего срока продолжал создавать произведения.",
+          "title": "Sentenced to 3 years.",
+          "content": "I spent all my time in prison (1908-1911) in Minsk. Throughout the entire period, he continued to create works.",
           "year": "1908"
         },
         {
-          "title": "Вернулся на Пинщину.",
-          "content": "Работал учителем вплоть до 1914 года.",
+          "title": "Came Back to Pinsk.",
+          "content": "Worked as a teacher until 1914.",
           "year": "1911"
         },
         {
-          "title": "Эвакуировался в Подмосковье.",
-          "content": "Недолго работал учителем.",
+          "title": "Evacuated to the Moscow region.",
+          "content": "Worked as a teacher for a Short time.",
           "year": "1915"
         },
         {
-          "title": "закончил Александровское военное училище.",
-          "content": "по экспресс-программе закончил Александровское военное училище и был направлен на службу в резервный полк в город Пермь.",
+          "title": "Graduated from the Alexander military school.",
+          "content": "According to the Express program, I graduated from the Alexander military school and was sent to serve in a reserve regiment in the city of Perm.",
           "year": "1916"
         },
         {
-          "title": "Отправлен на Румынский полк.",
-          "content": "В 1917 в звании подпоручика направлен на Румынский фронт. Но из-за болезни покинул фронт, а позже как учитель демобилизован.",
+          "title": "Sent to the Romanian regiment.",
+          "content": "In 1917, as a sub-Lieutenant, he was sent to the Romanian front. But due to illness, he left the front, and later as a teacher was demobilized.",
           "year": "1917"
         },
         {
-          "title": "Работал учителем.",
-          "content": "С 1918 и до 1921 года работал учителем в городе Обоянь (Курская область).",
+          "title": "Worked as a teacher.",
+          "content": "From 1918 to 1921, he worked as a teacher in Oboyan (Kursk region).",
           "year": "1918"
         },
         {
-          "title": "Вернулся в Минск.",
-          "content": "В 1921 вернулся в Минск.",
+          "title": "Returned to Minsk.",
+          "content": "In 1921 he returned to Minsk.",
           "year": "1921"
         },
         {
-          "title": "Обыск.",
-          "content": "В 1925 году в его квартире проводится обыск, часть документов конфискуется.",
+          "title": "Search.",
+          "content": "In 1925, his apartment was searched, and some documents were confiscated.",
           "year": "1925"
         },
         {
-          "title": "Вице-президента Академии наук БССР.",
-          "content": "С 1929 года занимает должность вице-президента Академии наук БССР. Принимает участие в съездах писателей.",
+          "title": "Vice-President of the BSSR Academy of Sciences.",
+          "content": "Since 1929, he has held the position of Vice-President Of the Academy of Sciences of the BSSR. Participates in writers ' congresses.",
           "year": "1929"
         },
         {
-          "title": "Обыск.",
-          "content": "В 1938 году в его квартире проводится новый обыск.",
+          "title": "Search.",
+          "content": "In 1938, a new search was conducted in his apartment.",
           "year": "1938"
         },
         {
-          "title": "Депутат Верховного совета БССР.",
-          "content": "Депутат верховного совета БССР (1938-1956).",
+          "title": "Deputy of the Supreme Council of the BSSR.",
+          "content": "Deputy of the Supreme Soviet of the BSSR (1938-1956).",
           "year": "1938"
         },
         {
-          "title": "Война.",
-          "content": "Во время войны писатель живёт в Москве и Ташкенте.",
+          "title": "War.",
+          "content": "During the war, the writer lives in Moscow and Tashkent.",
           "year": "1941"
         },
         {
-          "title": "Вернулся в Минск.",
-          "content": "После освобождения Минска вернулся на Родину.",
+          "title": "Returned to Minsk.",
+          "content": "After the liberation of Minsk, I returned to my Homeland.",
           "year": "1944"
         },
         {
-          "title": "Депутат Верховного совета СССР.",
-          "content": "Депутат верховного совета СССР (1946-1956).",
+          "title": "Deputy of the Supreme Soviet of the USSR.",
+          "content": "Deputy of the Supreme Soviet of the USSR (1946-1956).",
           "year": "1946"
         },
         {
-          "title": "Смерть.",
-          "content": "В последние годы Якуб Колас много болел. За 10 лет он 26 раз перенес воспаление легких. Но все равно продолжал создавать новые произведения и умер за рабочим столом 13 августа 1956 года от сердечно-сосудистой недостаточности.",
+          "title": "Death.",
+          "content": "In recent years, Yakub Kolas has been ill a lot. In 10 years, he had 26 cases of pneumonia. But he still continued to create new works and died at his Desk on August 13, 1956, from cardiovascular failure.",
           "year": "1956"
         }
       ],
       "works": [
-        "Весна, 1904г.",
-        "Край радзімы, 1906г.",
-        "Другое чытанне для дзяцей беларусаў, 1909г.",
-        "Сборник стихов \"Песні жальбы\", 1910г.",
-        "Сымон-музыка, 1910г.",
-        "Новая зямля, 1910г.",
-        "Сборник прозы \"Апавяданні\", 1912г.",
-        "Нёманаў дар, 1913г.",
-        "Тоўстае палена, 1913г.",
-        "Прапаў чалавек, 1913г.",
-        "Родныя з’явы, 1914г.",
-        "Чарка ўсё на свеце робіць, 1916г.",
-        "У палескай глушы, 1923г.",
-        "У глыбі Палесся, 1927г.",
-        "Забастоўшчыкі, 1925г.",
-        "На прасторах жыцця, 1926г.",
-        "Адшчапенец, 1932г.",
-        "Дрыгва, 1933г.",
-        "На ростанях, 1923г."
+        "Vesna, 1904г.",
+        "Krai radzimi, 1906г.",
+        "Drugoe chitanne dlyz dzyacei belarusov, 1909г.",
+        "Collection of poems \"Pesni Zhal'bi\", 1910г.",
+        "Simon-muzika, 1910г.",
+        "Novaya zemlya, 1910г.",
+        "Collection of prose \"Apavadanni\", 1912г.",
+        "Nemanau dar, 1913г.",
+        "Toustae palena, 1913г.",
+        "Prapau chalavek, 1913г.",
+        "Rodniya z'yavi, 1914г.",
+        "Charka use na svece robic', 1916г.",
+        "U paleskai glushi, 1923г.",
+        "U glibi palessya, 1927г.",
+        "Zabastoushchiki, 1925г.",
+        "Na prastorah zhiccya, 1926г.",
+        "Adshchapenec, 1932г.",
+        "Drigva, 1933г.",
+        "Na rostannyah, 1923г."
       ],
-      "video": "https://www.youtube.com/watch?v=xHHd2ONkjuQ",
+      "video": "xHHd2ONkjuQ",
       "place": "53.90, 27.5667"
     },
     {
