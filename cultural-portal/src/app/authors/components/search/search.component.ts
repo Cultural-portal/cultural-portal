@@ -4,6 +4,7 @@ import { Search } from '../../models/search.enum';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { debounceTime, filter } from 'rxjs/operators';
+import { AuthorsService } from '../../services/authors.service';
 
 @Component({
   selector: 'app-search',
@@ -26,7 +27,7 @@ export class SearchComponent implements OnInit {
   public searchText$: BehaviorSubject<string> = new BehaviorSubject(this.searchText);
 
 
-  constructor() { }
+  constructor(private authorsService: AuthorsService) { }
 
   public ngOnInit(): void {
     this.controlSearchInput.valueChanges.pipe(
@@ -42,6 +43,7 @@ export class SearchComponent implements OnInit {
   public onChangLang(val: Language): void {
     console.log('onChangLang', val);
     this.language$.next(val);
+    this.authorsService.language = val;
   }
 
   public onChangeTypeSearch(val: Search): void {

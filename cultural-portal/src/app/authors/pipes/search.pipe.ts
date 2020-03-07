@@ -14,7 +14,6 @@ export class SearchPipe implements PipeTransform {
     if ((!items) || (searchType === '')) {
       return null;
     }
-    console.log(searchText, searchType);
     switch (searchType) {
       case Search.city:
         return items.filter(value => {

@@ -9,7 +9,7 @@
     <p>{{author.summaryBiography}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button color="primary" (click)="onInfo()" >Подробнее</button>
+    <button mat-button color="primary" (click)="onInfo()" >{{ 'More information' | translate: (language$ | async)}}</button>
   </mat-card-actions>
 </mat-card>
 <mat-divider></mat-divider>
