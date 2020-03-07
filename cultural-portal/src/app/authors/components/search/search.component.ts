@@ -13,31 +13,33 @@ import { AuthorsService } from '../../services/authors.service';
 })
 export class SearchComponent implements OnInit {
   public language: Language = Language.ru;
-  public listLng: string[] =  Object.keys(Language);
-  public language$: BehaviorSubject<Language> = new BehaviorSubject(this.language);
+  public listLng: string[] = Object.keys(Language);
+  public language$: BehaviorSubject<Language> = new BehaviorSubject(
+    this.language
+  );
 
   public search: Search = Search.name;
-  public listSearch: string[] =  Object.keys(Search);
-  public searchType$: BehaviorSubject<Search> = new BehaviorSubject(this.search);
+  public listSearch: string[] = Object.keys(Search);
+  public searchType$: BehaviorSubject<Search> = new BehaviorSubject(
+    this.search
+  );
 
-
-  public controlSearchInput: FormControl = new FormControl('');
+  public controlSearchInput: FormControl = new FormControl();
 
   public searchText: string = '';
-  public searchText$: BehaviorSubject<string> = new BehaviorSubject(this.searchText);
+  public searchText$: BehaviorSubject<string> = new BehaviorSubject(
+    this.searchText
+  );
 
-
-  constructor(private authorsService: AuthorsService) { }
+  constructor(private authorsService: AuthorsService) {}
 
   public ngOnInit(): void {
-    this.controlSearchInput.valueChanges.pipe(
-      debounceTime(700),
-    ).subscribe(
-      textInput => {
+    this.controlSearchInput.valueChanges
+      .pipe(debounceTime(700))
+      .subscribe(textInput => {
         this.searchText = textInput;
         this.searchText$.next(textInput);
-      }
-    );
+      });
   }
 
   public onChangLang(val: Language): void {
@@ -50,5 +52,4 @@ export class SearchComponent implements OnInit {
     console.log('onChangeTypesearch', val);
     this.searchType$.next(val);
   }
-
 }

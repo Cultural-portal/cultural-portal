@@ -10,20 +10,22 @@ export const Dictionary = {
     'Search': 'Поиск',
     'name': 'Имя',
     'city': 'город',
+    'all': 'без фильтра',
     'enter text': 'введи текст' ,
     'More information': 'Больше информации'
 
   },
   be: {
-    'Choose lang': 'Выбраць мову',
-    'ru': 'ру',
+    'Choose lang': 'выбраць мову',
+    'ru': 'руc',
     'en': 'англ',
     'be': 'бел',
+    'all': 'без фільтра',
     'Search': 'Пошук',
     'name': 'Iмя',
     'city': 'горад',
-    'enter text': 'увядзi текст',
-    'More information': 'Болей инфармацii'
+    'enter text': 'увядзi тэкст',
+    'More information': 'Больш інфармацыі'
   },
  };
 
