@@ -7,7 +7,7 @@ import { Directive, Input, ElementRef,
 })
 export class ElevationDirective implements OnChanges{
   @Input()
-  public defaultElevation: number = 2;
+  public defaultElevation: number = 0;
 
   @Input()
   public raisedElevation: number = 10;
