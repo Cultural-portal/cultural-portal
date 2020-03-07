@@ -11,7 +11,7 @@ import { TitleComponent } from './components/title/title.component';
 import { AuthorOfDayComponent } from './components/author-of-day/author-of-day/author-of-day.component';
 import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './components/footer/footer/footer.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { FooterComponent } from './components/footer/footer/footer.component';
     CoreRoutingModule,
     MatMenuModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ]
 })
 export class CoreModule { }
