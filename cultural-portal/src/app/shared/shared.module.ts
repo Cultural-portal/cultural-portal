@@ -10,11 +10,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ElevationDirective } from './directives/elevation.directive';
+
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ElevationDirective],
   imports: [
     CommonModule,
     FormsModule,
@@ -38,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     MatFormFieldModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    ElevationDirective
   ]
 })
 export class SharedModule { }
