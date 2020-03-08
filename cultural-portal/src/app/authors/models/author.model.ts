@@ -11,8 +11,8 @@ export interface Authors {
   realName: string;
   realSurname: string;
   realPatronymic: string;
-  birth: string;
-  death: string;
+  birth: number;
+  death: number;
   img: string;
   summaryBiography: string;
   biography: Biography[];
