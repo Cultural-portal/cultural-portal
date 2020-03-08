@@ -8,8 +8,8 @@ export class RandomAuthorService {
 
   private authors: Authors[];
   private min: number = 0;
-  private max: number = this.authors.length;
-
+  // private max: number = this.authors.length;
+  private max: number = 8;
   constructor() { }
 
   public randomAuthor(): Authors {

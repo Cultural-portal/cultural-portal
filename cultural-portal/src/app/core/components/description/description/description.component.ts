@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-description',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DescriptionComponent implements OnInit {
 
-  constructor() { }
+  public showMobile: boolean;
+
+  constructor(public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+
+    this.breakpointObserver
+    .observe(['(min-width: 850px)'])
+    .subscribe((state: BreakpointState) => {
+      if (state.matches) {
+        this.showMobile = true;
+      } else {
+        this.showMobile = false;
+      }
+    });
+
   }
 
 }

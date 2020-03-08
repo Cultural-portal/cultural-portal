@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RandomAuthorService } from 'src/app/core/services/random-author.service';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-author-of-day',
@@ -14,10 +15,22 @@ export class AuthorOfDayComponent implements OnInit {
   public birth: string = new Date(-1807920000).toDateString();
   public death: string = new Date(807753600).toDateString();
 
-  constructor(private randomAuthorService: RandomAuthorService) { }
+  public showMobile: boolean;
+
+  constructor(private randomAuthorService: RandomAuthorService, public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
     // this.randomAuthorService.randomAuthor();
+
+    this.breakpointObserver
+      .observe(['(min-width: 720px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+          this.showMobile = true;
+        } else {
+          this.showMobile = false;
+        }
+      });
   }
 
 }

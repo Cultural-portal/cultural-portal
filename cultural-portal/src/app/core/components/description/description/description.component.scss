@@ -12,21 +12,38 @@
             text-decoration: underline;
             font-size: 1.5em;
         }
-        .description__text {
+        .description__text-desktop {
             display: flex;
             justify-content: space-between;
             width: 100%;
             margin-top: 40px;
+        
+            .about-literature {
+                padding: 0 20px;
+                border-left: 1px dotted rgb(133, 131, 123);
+                border-right: 1px dotted rgb(133, 131, 123);
+            }
+            p {
+                width: 30%;
+                min-width: 60px;
+                font-size: 1.1em;
+            }
         }
-        .about-literature {
-            padding: 0 20px;
-            border-left: 1px dotted rgb(133, 131, 123);
-            border-right: 1px dotted rgb(133, 131, 123);
-        }
-        p {
-            width: 30%;
-            min-width: 60px;
-            font-size: 1.1em;
+    
+        .description__text-mobile {
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            .about-literature {
+                margin: 20px auto;
+                padding: 20px 0;
+                border-top: 1px dotted rgb(133, 131, 123);
+                border-bottom: 1px dotted rgb(133, 131, 123);
+            }
+            p {
+                width: 86%;
+                margin: 0 auto;
+            }
         }
     }
 }
