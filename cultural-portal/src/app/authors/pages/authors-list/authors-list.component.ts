@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AuthorsService } from '../../services/authors.service';
+import { Observable } from 'rxjs';
+import { Authors } from '../../models/author.model';
+import { Language } from '../../models/language.enum';
+import { SearchComponent } from '../../components/search/search.component';
+import { Search } from '../../models/search.enum';
 
 @Component({
   selector: 'app-authors-list',
@@ -6,10 +12,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./authors-list.component.scss']
 })
 export class AuthorsListComponent implements OnInit {
+  public authors: Observable<Authors[]>;
+  @ViewChild(SearchComponent, { static: true })
+  public searchComponent: SearchComponent;
+  public language$: Observable<Language>;
+  public searchType$: Observable<Search>;
+  public searchText$: Observable<string>;
 
-  constructor() { }
+  constructor(private authorsService: AuthorsService) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    this.language$ = this.searchComponent.language$;
+    this.searchType$ = this.searchComponent.searchType$;
+    this.searchText$ = this.searchComponent.searchText$;
+    this.language$.subscribe(val => {
+      this.authors = this.authorsService.getAuthors(val);
+    });
+
+    this.authorsService.getAuthors(Language.ru);
   }
-
 }
