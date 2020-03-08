@@ -3,11 +3,11 @@
     <h2>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</h2>
     <p> {{ author.birth | date:"dd/MM/yyyy" }} - {{ author.death | date:"dd/MM/yyyy" }} </p>
     <img [src]="author.img">
-    <!-- <app-timeline></app-timeline> -->
+    <app-timeline [biographyArr]="author.biography"></app-timeline>
     <ul>
         <li *ngFor="let item of author.works">{{item}}</li>
     </ul>
-    <iframe [src]="getVideo(author.video)" frameborder="0" allowfullscreen>
+    <iframe class='video' [src]="getVideo(author.video)" (click)='full()' allowfullscreen>
     </iframe>
     <iframe [src]='getMap(author.place)'></iframe>
 </div>
