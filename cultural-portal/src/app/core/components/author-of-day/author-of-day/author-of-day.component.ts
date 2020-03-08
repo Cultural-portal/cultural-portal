@@ -9,18 +9,25 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 })
 export class AuthorOfDayComponent implements OnInit {
 
-  public authorName: string = 'Maksim Tank';   // когда будут все авторы, подгружать через сервис данные будем
-  public realName: string = 'Skurko Evgeniy Ivanovich';
-  public img: string = '';
-  public birth: string = new Date(-1807920000).toDateString();
-  public death: string = new Date(807753600).toDateString();
+  private author: Object;
+  public authorName: string;
+  public realName: string;
+  public img: string;
+  public birth: string;
+  public death: string;
 
   public showMobile: boolean;
 
-  constructor(private randomAuthorService: RandomAuthorService, public breakpointObserver: BreakpointObserver) { }
+  constructor(private randomAuthorService: RandomAuthorService, public breakpointObserver: BreakpointObserver) {}
 
   ngOnInit(): void {
-    // this.randomAuthorService.randomAuthor();
+
+    this.author = this.randomAuthorService.randomAuthor();
+    this.authorName = this.author['authorName'];
+    this.realName = this.author['realName'];
+    this.img = this.author['img'];
+    this.birth = this.author['birth'];
+    this.death = this.author['death'];
 
     this.breakpointObserver
       .observe(['(min-width: 720px)'])
@@ -32,5 +39,4 @@ export class AuthorOfDayComponent implements OnInit {
         }
       });
   }
-
 }

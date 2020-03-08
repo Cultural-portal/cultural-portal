@@ -1,3 +1,5 @@
+$border-color: rgb(133, 131, 123);
+
 .description {
     background-color: rgb(224, 215, 194);
     color: rgb(68, 58, 47);
@@ -20,8 +22,8 @@
         
             .about-literature {
                 padding: 0 20px;
-                border-left: 1px dotted rgb(133, 131, 123);
-                border-right: 1px dotted rgb(133, 131, 123);
+                border-left: 1px dotted $border-color;
+                border-right: 1px dotted $border-color;
             }
             p {
                 width: 30%;
@@ -37,8 +39,8 @@
             .about-literature {
                 margin: 20px auto;
                 padding: 20px 0;
-                border-top: 1px dotted rgb(133, 131, 123);
-                border-bottom: 1px dotted rgb(133, 131, 123);
+                border-top: 1px dotted $border-color;
+                border-bottom: 1px dotted $border-color;
             }
             p {
                 width: 86%;

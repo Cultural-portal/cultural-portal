@@ -1,9 +1,11 @@
+$base-color: rgb(180, 178, 166);
+
 .header__navigation {
     width: 100%;
     margin: 0;
     position: fixed;
     background-color: rgba(37, 26, 16, 0.767);
-    color: rgb(180, 178, 166);
+    color: $base-color;
 
     z-index: 100;
 }
@@ -28,7 +30,7 @@
 .header__select-lang {
     padding: 0 5px;
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(180, 178, 166);
+    color: $base-color;
     border: none;
     border-radius: 3px;
     outline: none;
