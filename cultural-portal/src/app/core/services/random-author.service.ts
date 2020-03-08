@@ -11,9 +11,6 @@ export class RandomAuthorService {
   public authorOfDay: Authors;
   private min: number;
   private max: number;
-  private dd: string;
-  private mm: string;
-  private yyyy: string;
 
   constructor() { }
 
