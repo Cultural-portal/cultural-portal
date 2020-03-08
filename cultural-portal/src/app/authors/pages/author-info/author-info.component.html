@@ -1,7 +1,7 @@
 <div class='wrapper-author'>
     <h1> {{ author.name }} {{ author.surname }} </h1>
     <h2>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</h2>
-    <p> {{ author.birth | date:"dd/MM/yyyy" }} - {{ author.death | date:"dd/MM/yyyy" }} </p>
+    <p> {{ author.birth }} - {{ author.death }} </p>
     <img [src]="author.img">
     <app-timeline [biographyArr]="author.biography"></app-timeline>
     <ul>
