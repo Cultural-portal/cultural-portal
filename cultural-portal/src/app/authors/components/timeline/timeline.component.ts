@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 interface IBiography {
   title: string;
@@ -12,7 +12,7 @@ interface IBiography {
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent {
-  public biographyArr: IBiography[];
+  @Input() public biographyArr: IBiography[];
 
   constructor() {
   }
