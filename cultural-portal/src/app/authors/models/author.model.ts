@@ -5,6 +5,7 @@ export interface AuthorsRoot {
 }
 
 export interface Authors {
+  id: number;
   name: string;
   surname: string;
   realName: string;
