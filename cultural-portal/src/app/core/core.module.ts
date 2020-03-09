@@ -12,6 +12,7 @@ import { AuthorOfDayComponent } from './components/author-of-day/author-of-day/a
 import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatMenuModule,
     MatButtonModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    RouterModule
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class CoreModule { }

@@ -8,7 +8,7 @@ const routes: Routes = [
     path: 'developers', component: DevelopersComponent,
   },
   {
-    path: 'worklogs', component: WorklogPageComponent,
+    path: 'worklog', component: WorklogPageComponent,
   }
 ];
 
