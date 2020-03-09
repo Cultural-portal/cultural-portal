@@ -1,0 +1,19 @@
+.footer {
+    padding-top: 14px;
+    background-color: rgb(65, 54, 42);
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer__title {
+            color: rgb(214, 198, 180);
+            font-size: 1em;
+        }
+        .footer__group-3 {
+            font-size: 1.1em;
+            color: rgb(240, 234, 227);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<nav class='header__navigation'>
+    <ul class='header__navigation_list-desktop' *ngIf='showMobile'>
+        <li><button mat-button>About</button></li>
+        <li><button mat-button>List of Authors</button></li>
+        <li><button mat-button>Team members</button></li>
+        <li><button mat-button>Worklog</button></li>
+        <li><button mat-button>Styleguide</button></li>
+        <select class='header__select-lang'>
+            <option>Eng</option>
+            <option>Ru</option>
+            <option>Be</option>
+        </select>
+    </ul>
+    <div class='header__navigation_list-mobile' *ngIf='!showMobile'>
+        <button mat-button [matMenuTriggerFor]='menu'>Menu</button>
+        <mat-menu #menu='matMenu'>
+            <button mat-menu-item>About</button>
+            <button mat-menu-item>List of Authors</button>
+            <button mat-menu-item>Team members</button>
+            <button mat-menu-item>Worklog</button>
+            <button mat-menu-item>Styleguide</button>
+        </mat-menu>
+        <select class='header__select-lang'>
+            <option>Eng</option>
+            <option>Ru</option>
+            <option>Be</option>
+        </select>
+    </div>
+
+</nav>

@@ -1,0 +1,110 @@
+$card-background: rgb(136, 127, 118);
+$card-color: rgb(231, 229, 227);
+$shadow-color: rgba(0,0,0,0.75);
+
+.author-of-day {
+    background-color: rgb(206, 198, 180);
+    color: rgb(59, 51, 41);
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        .author-of-day__title {
+            margin-bottom: 50px;
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+        .author-of-day__author-card-desktop {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 600px;
+            margin: 0 auto;
+
+            background-color: $card-background;
+            color: $card-color;
+            box-shadow: 0px 0px 7px 1px $shadow-color;
+            transition: all 0.6s;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+            .author-card__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            mat-card-header {
+                margin: 20px 0;
+            }
+            mat-card-subtitle {
+                color: rgb(22, 19, 17);
+            }
+            img {
+                width: 240px;
+                margin-top: 20px;
+            }
+            p {
+                font-size: 1.1em;
+                line-height: 1.5em;
+
+                span {
+                    color: rgb(194, 188, 181);
+                }
+            }
+            mat-card-actions {
+                align-self: center;
+                margin-top: 40px;
+            }
+        }
+
+        .author-of-day__author-card-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
+            margin: 0 auto;
+
+            background-color: $card-background;
+            color: $card-color;
+            box-shadow: 0px 0px 7px 1px $shadow-color;
+            transition: all 0.6s;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+            .author-card__info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            mat-card-header {
+                align-self: flex-start;
+                margin: 10px 0;
+            }
+            mat-card-subtitle {
+                color: rgb(22, 19, 17);
+            }
+            img {
+                width: 260px;
+                
+            }
+            p {
+                font-size: 1.1em;
+                line-height: 1.5em;
+
+                span {
+                    color: rgb(194, 188, 181);
+                }
+            }
+            mat-card-actions {
+                align-self: center;
+                margin: 8px 0;
+            }
+        }
+
+    }
+}
