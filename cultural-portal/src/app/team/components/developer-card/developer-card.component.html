@@ -1,0 +1,15 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ developer.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{ developer.img }}" alt="avatar">
+  <mat-card-content>
+    <p>
+      {{ developer.role }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button  href="{{ developer.github }}">GitHub</a>
+  </mat-card-actions>
+</mat-card>
+

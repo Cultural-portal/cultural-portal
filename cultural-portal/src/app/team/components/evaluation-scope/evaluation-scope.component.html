@@ -1,0 +1,13 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{scope.scopeTitle}}
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-list>
+    <mat-list-item *ngFor="let requirement of scope.requirementsList">
+      <mat-checkbox [checked]="requirement.isDone === 'true'" [disabled]="true"></mat-checkbox>
+      {{requirement.description}}
+    </mat-list-item>
+  </mat-list>
+</mat-expansion-panel>

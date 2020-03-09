@@ -1,5 +1,11 @@
+export interface DeveloperResponse {
+  RU: Developer[];
+  EN: Developer[];
+  BEL: Developer[];
+}
+
 export interface Developer {
-  nickname: string;
+  name: string;
   github: string;
   img: string;
   role: string;

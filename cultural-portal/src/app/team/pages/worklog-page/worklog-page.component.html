@@ -1,0 +1,5 @@
+<div class="worklog-container">
+  <app-worklogs-list [worklogs]=" (data | async).worklogs "></app-worklogs-list>
+  <app-main-difficulties [mainDifficulties]=" (data | async).mainDifficulties "></app-main-difficulties>
+  <app-evaluation-list [evaluation]=" (data | async).evaluation "></app-evaluation-list>
+</div>
