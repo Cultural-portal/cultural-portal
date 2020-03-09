@@ -1,0 +1,12 @@
+<mat-card class="timeline">
+  <ul class="list">
+    <li *ngFor="let item of biographyArr" class="list--item">
+      <div class="container">
+        <h3 class="container--title">{{item.title}}</h3>
+        <p class="container--content">{{item.content}}</p>
+      </div>
+      <div class="year">{{item.year}}</div>
+    </li>
+  </ul>
+  <div style="clear: both;"></div>
+</mat-card>
