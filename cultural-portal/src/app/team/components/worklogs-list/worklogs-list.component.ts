@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Activity, DeveloperActivity } from '../../models/developer-activity.model';
 
 @Component({
@@ -8,33 +8,7 @@ import { Activity, DeveloperActivity } from '../../models/developer-activity.mod
 })
 export class WorklogsListComponent implements OnInit {
 
-  public dataSource: Activity[] = [
-    {hours: 1, description: 'kjbkjkjbkjkj'},
-    {hours: 1, description: 'Hydrogen'},
-    {hours: 1, description: 'Hydrogen'},
-    {hours: 1, description: 'Hydrogen'},
-    {hours: 1, description: 'Hydrogen'},
-    {hours: 1, description: 'Hydrogen'},
-  ];
-
-  public worklogs: DeveloperActivity[] =  [
-    {
-      name: 'ermak',
-      activityList: this.dataSource
-    },
-    {
-      name: 'ermak',
-      activityList: this.dataSource
-    },
-    {
-      name: 'ermak',
-      activityList: this.dataSource
-    },
-    {
-      name: 'ermak',
-      activityList: this.dataSource
-    }
-  ];
+  @Input() public worklogs: DeveloperActivity[];
 
   constructor() { }
 

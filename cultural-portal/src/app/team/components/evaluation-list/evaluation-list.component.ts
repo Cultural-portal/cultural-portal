@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { EvaluationScope, EvaluationrRequirement } from '../../models/evaluation-scope.model';
 
 @Component({
@@ -8,19 +8,7 @@ import { EvaluationScope, EvaluationrRequirement } from '../../models/evaluation
 })
 export class EvaluationListComponent implements OnInit {
 
-  public evaluationRequirementsList: EvaluationrRequirement[] = [
-    {isDone: true, description: 'kdsnvfsdvnn,mfdv,nmf'},
-    {isDone: true, description: 'kdsnvfsdvnn,mfdv,nmf'},
-    {isDone: true, description: 'kdsnvfsdvnn,mfdv,nmf'},
-    {isDone: true, description: 'kdsnvfsdvnn,mfdv,nmf'},
-    {isDone: true, description: 'kdsnvfsdvnn,mfdv,nmf'},
-  ];
-
-  public evaluation: EvaluationScope[] = [
-    {scopeTitle: 'Min', requirementsList: this.evaluationRequirementsList},
-    {scopeTitle: 'Min', requirementsList: this.evaluationRequirementsList},
-    {scopeTitle: 'Min', requirementsList: this.evaluationRequirementsList},
-  ];
+  @Input() public evaluation: EvaluationScope[];
 
   constructor() { }
 

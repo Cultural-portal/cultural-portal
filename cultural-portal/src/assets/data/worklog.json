@@ -1,0 +1,802 @@
+{
+  "EN": {
+    "worklogs": [
+      {
+        "name": "Uladzimir Kazak",
+        "activityList": [
+          {
+            "hours": "5h",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5h",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3h",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Nikita Moiseichyk",
+        "activityList": [
+          {
+            "hours": "8h",
+            "description": "add data JSON authors RUS lang"
+          },
+          {
+            "hours": "4h",
+            "description": "add data JSON authors ENG lang"
+          },
+          {
+            "hours": "4h",
+            "description": "add data JSON authors BEL lang"
+          },
+          {
+            "hours": "2h",
+            "description": "timeline component"
+          },
+          {
+            "hours": "2h",
+            "description": "search information how insert video in iframe"
+          }
+        ]
+      },
+      {
+        "name": "Aliaksandr Babtsou",
+        "activityList": [
+          {
+            "hours": "10m",
+            "description": "add routing to list athors"
+          },
+          {
+            "hours": "10m",
+            "description": "add service authors and pipe search"
+          },
+          {
+            "hours": "45m",
+            "description": "Implementation service Authors"
+          },
+          {
+            "hours": "15m",
+            "description": "add component author-item"
+          },
+          {
+            "hours": "10m",
+            "description": "component author-item"
+          },
+          {
+            "hours": "30m",
+            "description": "Implementation component aothor item"
+          },
+          {
+            "hours": "10m",
+            "description": "import material module in share module"
+          },
+          {
+            "hours": "10m",
+            "description": "add component panel search"
+          },
+          {
+            "hours": "20m",
+            "description": "HTML component panel search"
+          },
+          {
+            "hours": "45m",
+            "description": "implement panel search"
+          },
+          {
+            "hours": "30m",
+            "description": "implement search City in title biography"
+          },
+          {
+            "hours": "30m",
+            "description": "flex 3 rows in list authors"
+          },
+          {
+            "hours": "10m",
+            "description": "format pipe date"
+          },
+          {
+            "hours": "10m",
+            "description": "send author to autor-info"
+          },
+          {
+            "hours": "60m",
+            "description": "interface translation completed"
+          },
+          {
+            "hours": "20m",
+            "description": "interface translation BE"
+          }
+        ]
+      },
+      {
+        "name": "Ulyana Bychkouskaya",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Timur Yermakou",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Vlad Drozd",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      }
+    ],
+    "mainDifficulties": [],
+    "evaluation": [
+      {
+        "scopeTitle": "Min scope - 50",
+        "requirementsList": [
+          {
+            "isDone": "false",
+            "description": "10 Main page + page with a list of authors + author's page (only pages with content without widgets)"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Page with team members + page with worklog"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Page with list of authors contains search widget"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Portal has two languages"
+          }
+        ]
+      },
+      {
+        "scopeTitle": "Normal scope - 140",
+        "requirementsList": [
+          {
+            "isDone": "true",
+            "description": "20 Portal has page with styleguide"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Mobile version is okey"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Ipad/tablet version is okey"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Author's page contains timeline"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Author's page contains video overlay"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Author's page contains photo gallery"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Author's page contains map (geowidget)"
+          },
+          {
+            "isDone": "true",
+            "description": "from 0 to 20 Design (typography, icons, colors, links + buttons + input, ui components are styled)"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Material-ui / bootstrap is used"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Portal has third language"
+          }
+        ]
+      },
+      {
+        "scopeTitle": "Extra scope - 90",
+        "requirementsList": [
+          {
+            "isDone": "true",
+            "description": "10 Confidence of the project presentation"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Project is made using scully"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Contentful / netlify cms / other cms is used for content management"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Animations / special effects like paralax"
+          },
+          {
+            "isDone": "true",
+            "description": "up to 20 Outstanding design"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Storybook/angularplayground/compodoc/other angulaer styleguide/documentation tool usage for the page with styles"
+          }
+        ]
+      }
+    ]
+  },
+  "RU": {
+    "worklogs": [
+      {
+        "name": "Uladzimir Kazak",
+        "activityList": [
+          {
+            "hours": "5ч",
+            "description": "добавил некоторые детали автора"
+          },
+          {
+            "hours": "5ч",
+            "description": "добавил видео и показал карту"
+          },
+          {
+            "hours": "3ч",
+            "description": "переделал модуль авторов"
+          }
+        ]
+      },
+      {
+        "name": "Nikita Moiseichyk",
+        "activityList": [
+          {
+            "hours": "8ч",
+            "description": "добавил данные JSON авторов на русском"
+          },
+          {
+            "hours": "4ч",
+            "description": "добавил данные JSON авторов на английском"
+          },
+          {
+            "hours": "4ч",
+            "description": "добавил данные JSON авторов на беларуском"
+          },
+          {
+            "hours": "2ч",
+            "description": "timeline компонент"
+          },
+          {
+            "hours": "2ч",
+            "description": "поиск информации как вставить видео в iframe"
+          }
+        ]
+      },
+      {
+        "name": "Aliaksandr Babtsou",
+        "activityList": [
+          {
+            "hours": "10м",
+            "description": "добавил маршрутизацию в список авторов"
+          },
+          {
+            "hours": "10м",
+            "description": "добавил service для авторов and pipe для поиска"
+          },
+          {
+            "hours": "45м",
+            "description": "Реализация service Authors"
+          },
+          {
+            "hours": "15м",
+            "description": "добавил компонент author-item"
+          },
+          {
+            "hours": "10м",
+            "description": "компонент author-item"
+          },
+          {
+            "hours": "30м",
+            "description": "реализация компонента author-item"
+          },
+          {
+            "hours": "10м",
+            "description": "добавил material module в share module"
+          },
+          {
+            "hours": "10м",
+            "description": "добавил компонент panel-search"
+          },
+          {
+            "hours": "20м",
+            "description": "HTML компонент panel-search"
+          },
+          {
+            "hours": "45м",
+            "description": "реализовал panel-search"
+          },
+          {
+            "hours": "30м",
+            "description": "реализовал поиск города в заголовке биографии"
+          },
+          {
+            "hours": "30м",
+            "description": "добавил 3 строки в списке авторов"
+          },
+          {
+            "hours": "10м",
+            "description": "оформил pipe date"
+          },
+          {
+            "hours": "10м",
+            "description": "добавил author в autor-info"
+          },
+          {
+            "hours": "60м",
+            "description": "interface перевода сделан"
+          },
+          {
+            "hours": "20м",
+            "description": "interface перевода BE"
+          }
+        ]
+      },
+      {
+        "name": "Ulyana Bychkouskaya",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Timur Yermakou",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Vlad Drozd",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      }
+    ],
+    "mainDifficulties": [
+      "dsvsdv",
+      "sdvsdvsd",
+      "sdvsdvsdvsdv"
+    ],
+    "evaluation": [
+      {
+        "scopeTitle": "Минимальный уровень - 50",
+        "requirementsList": [
+          {
+            "isDone": "false",
+            "description": "10 Главная страница + страница со списком авторов + страница автора (только страницы с контентом без виджетов)"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Страница с членами команды + страница с рабочим журналом"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Страница со списком авторов содержит поисковый виджет"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Портал имеет два языка"
+          }
+        ]
+      },
+      {
+        "scopeTitle": "Нормальный уровень - 140",
+        "requirementsList": [
+          {
+            "isDone": "true",
+            "description": "20 На портале есть страница с руководством по стилю"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Мобильная версия хорошо выглядит"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Версия для iPad / планшета хорошо выглядит"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Страница автора содержит временную шкалу"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Страница автора содержит видео оверлей"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Страница автора содержит фотогалерею"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Страница автора содержит карту (geowidget)"
+          },
+          {
+            "isDone": "true",
+            "description": "от 0 до 20 Дизайн (типография, значки, цвета, ссылки + кнопки + ввод, стилизованные компоненты пользовательского интерфейса)"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Материал-UI / Bootstrap используется"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Портал имеет третий язык"
+          }
+        ]
+      },
+      {
+        "scopeTitle": "Дополнительный уровень - 90",
+        "requirementsList": [
+          {
+            "isDone": "true",
+            "description": "10 Уверенность в презентации проекта"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Проект сделан с использованием scully"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Contentful / Netlify CMS / другие CMS используется для управления контентом"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Анимации / спецэффекты, такие как параллакс"
+          },
+          {
+            "isDone": "true",
+            "description": "до 20 выдающийся дизайн"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Сборник рассказов / угловая игровая площадка / compodoc / другое руководство по угловым стилям / использование инструмента документации для страницы со стилями"
+          }
+        ]
+      }
+    ]
+  },
+  "BE": {
+    "worklogs": [
+      {
+        "name": "Uladzimir Kazak",
+        "activityList": [
+          {
+            "hours": "5ч",
+            "description": "дадаў некаторыя дэталі аўтара"
+          },
+          {
+            "hours": "5ч",
+            "description": "дадаў відэа і паказаў карту"
+          },
+          {
+            "hours": "3ч",
+            "description": "перарабіў модуль аўтараў"
+          }
+        ]
+      },
+      {
+        "name": "Nikita Moiseichyk",
+        "activityList": [
+          {
+            "hours": "8ч",
+            "description": "дадаў дадзеныя JSON аўтараў на рускай мове"
+          },
+          {
+            "hours": "4ч",
+            "description": "дадаў дадзеныя JSON аўтараў на англійскай мове"
+          },
+          {
+            "hours": "4ч",
+            "description": "дадаў дадзеныя JSON аўтараў на беларускай мове"
+          },
+          {
+            "hours": "2ч",
+            "description": "timeline кампанент"
+          },
+          {
+            "hours": "2ч",
+            "description": "пошук інфармацыі як ўставіць відэа ў iframe"
+          }
+        ]
+      },
+      {
+        "name": "Aliaksandr Babtsou",
+        "activityList": [
+          {
+            "hours": "10х",
+            "description": "дадаў маршрутызацыю ў спіс аўтараў "
+          },
+          {
+            "hours": "10х",
+            "description": "дадаў service для аўтараў and pipe для пошуку"
+          },
+          {
+            "hours": "45х",
+            "description": "Рэалізацыя service Authors"
+          },
+          {
+            "hours": "15х",
+            "description": "дадаў кампанент author-item"
+          },
+          {
+            "hours": "10х",
+            "description": "кампанент author-item"
+          },
+          {
+            "hours": "30х",
+            "description": "рэалізацыя кампанента author-item"
+          },
+          {
+            "hours": "10х",
+            "description": "дадаў material module ў share module"
+          },
+          {
+            "hours": "10х",
+            "description": "дадаў кампанент panel-search"
+          },
+          {
+            "hours": "20х",
+            "description": "HTML кампанент panel-search"
+          },
+          {
+            "hours": "45х",
+            "description": "рэалізаваў panel-search"
+          },
+          {
+            "hours": "30х",
+            "description": "рэалізаваў пошук горада ў загалоўку біяграфіі"
+          },
+          {
+            "hours": "30х",
+            "description": "дадаў 3 радкі ў спісе аўтараў"
+          },
+          {
+            "hours": "10х",
+            "description": "аформіў pipe date"
+          },
+          {
+            "hours": "10х",
+            "description": "дадаў author ў autor-info"
+          },
+          {
+            "hours": "60х",
+            "description": "interface перакладу зроблены"
+          },
+          {
+            "hours": "20х",
+            "description": "interface перакладу BE"
+          }
+        ]
+      },
+      {
+        "name": "Ulyana Bychkouskaya",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Timur Yermakou",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      },
+      {
+        "name": "Vlad Drozd",
+        "activityList": [
+          {
+            "hours": "5",
+            "description": "add some details author"
+          },
+          {
+            "hours": "5",
+            "description": "add video and map show"
+          },
+          {
+            "hours": "3",
+            "description": "refactor authors module"
+          }
+        ]
+      }
+    ],
+    "mainDifficulties": [
+      "dsvsdv",
+      "sdvsdvsd",
+      "sdvsdvsdvsdv"
+    ],
+    "evaluation": [
+      {
+        "scopeTitle": "Мінімальны ўзровень - 50",
+        "requirementsList": [
+          {
+            "isDone": "false",
+            "description": "10 Галоўная старонка + старонка са спісам аўтараў + старонка аўтара (толькі старонкі з кантэнтам без віджэтаў)"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Старонка з членамі каманды + старонка з рабочым часопісам"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Старонка са спісам аўтараў змяшчае пошукавы віджэт"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Партал мае дзве мовы"
+          }
+        ]
+      },
+      {
+        "scopeTitle": "нармальны ўзровень - 140",
+        "requirementsList": [
+          {
+            "isDone": "true",
+            "description": "20 На партале ёсць старонка з кіраўніцтвам па стылі"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Мабільная версія добра выглядае"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Версія для iPad / планшэта добра выглядае"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Старонка аўтара змяшчае часовую шкалу"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Старонка аўтара утрымлівае відэа оверлэй"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Старонка аўтара змяшчае фотагалерэю"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Старонка аўтара змяшчае карту (geowidget)"
+          },
+          {
+            "isDone": "true",
+            "description": "ад 0 да 20 Дызайн (друкарня, значкі, колеру, спасылкі + кнопкі + ўвод, стылізаваныя кампаненты карыстацкага інтэрфейсу)"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Матэрыял-UI / Bootstrap выкарыстоўваецца"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Партал мае трэццю мову"
+          }
+        ]
+      },
+      {
+        "scopeTitle": "Дадатковы ўзровень - 90",
+        "requirementsList": [
+          {
+            "isDone": "true",
+            "description": "10 Упэўненасць у прэзентацыі праекта"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Праект зроблены з выкарыстаннем scully"
+          },
+          {
+            "isDone": "true",
+            "description": "10 Contentful / Netlify CMS / іншыя CMS выкарыстоўваецца для кіравання кантэнтам"
+          },
+          {
+            "isDone": "true",
+            "description": "20 Анімацыі / спецэфекты, такія як паралакс"
+          },
+          {
+            "isDone": "true",
+            "description": "да 20 выбітны дызайн "
+          },
+          {
+            "isDone": "true",
+            "description": "20 Зборнік апавяданняў / кутняя гульнявая пляцоўка / compodoc / іншае кіраўніцтва па кутніх стылях / выкарыстанне інструмента дакументацыі для старонкі са стылямі"
+          }
+        ]
+      }
+    ]
+  }
+}
