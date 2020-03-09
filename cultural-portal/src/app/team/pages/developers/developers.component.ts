@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Developer } from '../../models/developer.model';
-import { DevelopersService } from '../../services/developers.service';
+import { DevelopersService } from '../../services/developers/developers.service';
 
 @Component({
   selector: 'app-developers',
