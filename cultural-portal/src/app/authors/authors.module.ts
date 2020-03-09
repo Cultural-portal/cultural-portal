@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AuthorItemComponent } from './components/autor-item/author-item.component';
 import { SearchComponent } from './components/search/search.component';
 import { TranslatePipe } from './pipes/translate.pipe';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TranslatePipe } from './pipes/translate.pipe';
     SearchPipe,
     AuthorItemComponent,
     SearchComponent,
-    TranslatePipe
+    TranslatePipe,
+    TimelineComponent
   ],
   imports: [CommonModule, AuthorsRoutingModule, SharedModule]
 })

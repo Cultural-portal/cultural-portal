@@ -1,1 +1,13 @@
-<p>author-info works!</p>
+<div class='wrapper-author'>
+  <h1> {{ author.name }} {{ author.surname }} </h1>
+  <h2>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</h2>
+  <p> {{ author.birth }} - {{ author.death }} </p>
+  <img [src]="author.img">
+  <app-timeline [biographyArr]="author.biography"></app-timeline>
+  <ul>
+      <li *ngFor="let item of author.works">{{item}}</li>
+  </ul>
+  <iframe class='video' [src]="getVideo(author.video)" (click)='full()' allowfullscreen>
+  </iframe>
+  <iframe [src]='getMap(author.place)'></iframe>
+</div>
