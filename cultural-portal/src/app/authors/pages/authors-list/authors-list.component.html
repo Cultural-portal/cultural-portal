@@ -1,1 +1,18 @@
-<p>authors-list works!</p>
+<mat-card class="searchPanel">
+<ng-container>
+  <app-search></app-search>
+</ng-container>
+</mat-card>
+<mat-divider></mat-divider>
+
+<div class="cardList">
+<ng-container class="main"
+  *ngFor="
+    let author of authors
+      | async
+      | search: (searchText$ | async):(searchType$ | async)
+  "
+>
+  <app-author-item class="cardListItem" [author]="author"></app-author-item>
+</ng-container>
+</div>

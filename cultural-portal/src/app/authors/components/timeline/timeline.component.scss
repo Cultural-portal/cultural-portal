@@ -1,0 +1,122 @@
+//color component
+$color-vertical-line: #c5c5c5;
+$color-bg-year: rgba(230, 33, 99, 1);
+$color-bg-year-shadow: rgba(230, 33, 99, .5);
+$color-title: rgba(233, 80, 99, 1);
+$color-text-data: white;
+
+.timeline {
+  position: relative;
+  margin: 10px auto;
+  max-width: 1000px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 99%;
+    background-color: $color-vertical-line;
+    transform: translateX(-50%);
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  &--item {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      float: left;
+      clear: both;
+      text-align: right;
+      & .year{
+        position: absolute;
+        top: 20px;
+        right: -80px;
+      }
+    }
+
+    &:nth-child(even) {
+      float: right;
+      clear: both;
+      text-align: left;
+      & .year{
+        position: absolute;
+        top: 20px;
+        left: -80px;
+      }
+    }
+    & .year{
+      border: 1px solid $color-bg-year;
+      width: 50px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-bg-year;
+      border-radius: 10px;
+      color: $color-text-data;
+      box-shadow: 0 0 0 3px $color-bg-year-shadow;
+    }
+    &:nth-child(odd):before, &:nth-child(even):before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 27px;
+      right: -6px;
+      background-color: $color-bg-year;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px $color-bg-year-shadow;
+    }
+
+    &:nth-child(even):before {
+      left: -4px;
+    }
+
+    .container {
+      padding-bottom: 10px;
+
+
+      &--title {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: $color-title;
+      }
+
+      &--content {
+        margin: 10px 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
+@media (max-width: 767px){
+  .timeline:before{
+    left: 20px;
+  }
+  .list--item:nth-child(odd),
+  .list--item:nth-child(even){
+    width: 100%;
+    text-align: left;
+    padding: 40px 0 50px 50px;
+  }
+  .list--item:nth-child(odd):before,
+  .list--item:nth-child(even):before{
+    top: 9px;
+    left: 0;
+  }
+  .list--item:nth-child(odd) .year,
+  .list--item:nth-child(even) .year{
+    top: 0;
+    left: 50px;
+  }
+}
