@@ -22,7 +22,7 @@ export class AuthorItemComponent implements OnInit {
 
   }
   public onInfo(): void {
-    this.router.navigate(['author-info'],
+    this.router.navigate(['authors/info'],
                          { queryParams: { item: JSON.stringify(this.author) } });
   }
 
