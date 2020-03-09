@@ -1,7 +1,9 @@
-<div class='wrapper-author'>
-  <h1> {{ author.name }} {{ author.surname }} </h1>
-  <h2>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</h2>
-  <p> {{ author.birth }} - {{ author.death }} </p>
+<mat-card class='wrapper-author'>
+  <mat-card-header>
+    <mat-card-title> {{ author.name }} {{ author.surname }} </mat-card-title>
+    <mat-card-subtitle>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</mat-card-subtitle>
+    <mat-card-title> {{ author.birth }} - {{ author.death }} </mat-card-title>
+  </mat-card-header>
   <img [src]="author.img">
   <app-timeline [biographyArr]="author.biography"></app-timeline>
   <ul>
@@ -10,4 +12,4 @@
   <iframe class='video' [src]="getVideo(author.video)" (click)='full()' allowfullscreen>
   </iframe>
   <iframe [src]='getMap(author.place)'></iframe>
-</div>
+</mat-card>

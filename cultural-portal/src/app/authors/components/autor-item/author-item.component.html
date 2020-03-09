@@ -2,7 +2,7 @@
   <mat-card-header>
     <mat-card-title>{{author.surname}} {{author.name}}</mat-card-title>
     <mat-card-subtitle>{{author.realSurname}} {{author.realName}}</mat-card-subtitle>
-    <mat-card-title>{{author.birth | date : 'dd/MM/yyyy' }} - {{author.death | date : 'dd/MM/yyyy' }}</mat-card-title>
+    <mat-card-title>{{author.birth}} - {{author.death}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image [src]="author.img" alt="Photo of a {{author.realSurname}}">
   <mat-card-content>
