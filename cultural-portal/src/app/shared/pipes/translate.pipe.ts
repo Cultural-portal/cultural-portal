@@ -54,15 +54,11 @@ export const Dictionary = {
   name: 'translate'
 })
 export class TranslatePipe implements PipeTransform {
- private language$: Observable<Language> = this.stateService.language$;
- private language: Language;
- constructor(private stateService: StateService) {
 
- }
-  public transform(value: string, language?: Language): string {
-    this.language$.subscribe(lang => this.language = lang);
-    if (this.language === Language.en ) { return value; }
-    return Dictionary[this.language][value];
+  public transform(value: string, language: Language): string {
+
+    if (language === Language.en ) { return value; }
+    return Dictionary[language][value];
   }
 
 }
