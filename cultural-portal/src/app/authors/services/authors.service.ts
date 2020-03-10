@@ -9,7 +9,6 @@ import { Language } from 'src/app/core/models/language.enum.js';
 })
 export class AuthorsService {
   private authors: AuthorsRoot = <AuthorsRoot>authorsList;
-  public language$: BehaviorSubject<Language> = new BehaviorSubject(Language.ru);
   constructor() {}
 
   public getAuthors(ln: Language = Language.ru): Observable<Authors[]> {
@@ -23,8 +22,5 @@ export class AuthorsService {
     }
   }
 
-  public set language(val: Language) {
-    this.language$.next(val);
-  }
 
 }

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { Language } from 'src/app/core/models/language.enum';
+import { BehaviorSubject } from 'rxjs';
+import { StateService } from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +10,16 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public language: Language = Language.ru;
+  public listLng: string[] = Object.keys(Language);
+  public language$: BehaviorSubject<Language> = this.stateService.language$;
 
   public showMobile: boolean;
 
-  constructor(public breakpointObserver: BreakpointObserver) { }
+  constructor(public breakpointObserver: BreakpointObserver,
+              private stateService: StateService) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
 
     this.breakpointObserver
     .observe(['(min-width: 650px)'])
@@ -24,5 +31,12 @@ export class HeaderComponent implements OnInit {
       }
     });
 
+    this.language$.subscribe(language => this.language = language);
+
+  }
+
+  public onChangLang(val: Language): void {
+    console.log(val);
+    this.stateService.language = val;
   }
 }

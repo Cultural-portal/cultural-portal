@@ -12,6 +12,7 @@ export class StateService {
   constructor() { }
 
   public set language(val: Language) {
+    console.log('state', val);
     this.language$.next(val);
   }
 

@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
-    RouterModule
+    RouterModule,
+    SharedModule,
   ],
   exports: [
     HeaderComponent,

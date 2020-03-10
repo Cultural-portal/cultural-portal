@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { AuthorsService } from '../../services/authors.service';
 import { Language } from 'src/app/core/models/language.enum';
+import { StateService } from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'app-author-item',
@@ -16,10 +17,10 @@ export class AuthorItemComponent implements OnInit {
   public language$: Observable<Language>;
 
 
-  constructor(private router: Router, private authorsService: AuthorsService) { }
+  constructor(private router: Router, private stateService: StateService) { }
 
   public ngOnInit(): void {
-    this.language$ = this.authorsService.language$;
+    this.language$ = this.stateService.language$;
 
   }
   public onInfo(): void {
