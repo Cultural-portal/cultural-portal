@@ -1,8 +1,8 @@
-import { Injectable } from "@angular/core";
-import authorsList from "../../../assets/data/authors.json";
-import { AuthorsRoot, Authors } from "../models/author.model.js";
+import { Injectable } from '@angular/core';
+import authorsList from '../../../assets/data/authors.json';
+import { AuthorsRoot, Authors } from '../models/author.model.js';
 import { Observable, of, BehaviorSubject } from 'rxjs';
-import { Language } from '../models/language.enum.js';
+import { Language } from 'src/app/core/models/language.enum.js';
 
 @Injectable({
   providedIn: 'root'

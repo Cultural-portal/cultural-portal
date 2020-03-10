@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer/footer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
 
+
 @NgModule({
   declarations: [
     MainComponent,
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
     DescriptionComponent,
     TitleComponent,
     AuthorOfDayComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     CommonModule,

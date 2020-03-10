@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Language } from '../models/language.enum';
+import { Language } from 'src/app/core/models/language.enum';
+
 
 export const Dictionary = {
   ru: {

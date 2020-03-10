@@ -2,9 +2,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { AuthorsService } from '../../services/authors.service';
 import { Observable } from 'rxjs';
 import { Authors } from '../../models/author.model';
-import { Language } from '../../models/language.enum';
+
 import { SearchComponent } from '../../components/search/search.component';
 import { Search } from '../../models/search.enum';
+import { Language } from 'src/app/core/models/language.enum';
 
 @Component({
   selector: 'app-authors-list',

@@ -1,9 +1,10 @@
 import { Component, OnInit, Input, ViewChild, AfterViewInit } from '@angular/core';
 import { Authors } from '../../models/author.model';
 import { Router } from '@angular/router';
-import { Language } from '../../models/language.enum';
+
 import { Observable, of } from 'rxjs';
 import { AuthorsService } from '../../services/authors.service';
+import { Language } from 'src/app/core/models/language.enum';
 
 @Component({
   selector: 'app-author-item',
