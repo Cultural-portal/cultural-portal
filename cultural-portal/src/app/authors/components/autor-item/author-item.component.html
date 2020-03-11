@@ -1,15 +1,16 @@
-<mat-card class="example-card" appElevation>
-  <mat-card-header>
-    <mat-card-title>{{author.surname}} {{author.name}}</mat-card-title>
-    <mat-card-subtitle>{{author.realSurname}} {{author.realName}}</mat-card-subtitle>
+<mat-card appElevation class="example_card">
+  <img [src]="author.img" alt="Photo of a {{author.realSurname}}" class="example_card--image" mat-card-image>
+  <mat-card-header class="example_card--header">
+    <mat-card-title>{{author.name}} {{author.surname}}</mat-card-title>
+    <mat-card-subtitle>{{author.realSurname}} {{author.realName}} {{author.realPatronymic}}</mat-card-subtitle>
     <mat-card-title>{{author.birth}} - {{author.death}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image [src]="author.img" alt="Photo of a {{author.realSurname}}">
-  <mat-card-content>
+  <mat-card-content class="example_card--content">
     <p>{{author.summaryBiography}}</p>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-button color="primary" (click)="onInfo()" >{{ 'More information' | translate: (language$ | async)}}</button>
+  <mat-card-actions class="example_card--button_wrap">
+    <button (click)="onInfo()" class="example_card--button" color="primary"
+            mat-button>{{ 'More information' | translate: (language$ | async)}}</button>
   </mat-card-actions>
 </mat-card>
 <mat-divider></mat-divider>

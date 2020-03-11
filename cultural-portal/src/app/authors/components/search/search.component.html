@@ -1,5 +1,5 @@
-<mat-card appElevation>
-  <mat-form-field>
+<mat-card appElevation class="search_block">
+  <mat-form-field class="search_block--lang">
     <mat-label>{{'Choose lang' | translate: language}}</mat-label>
     <mat-select (selectionChange)="onChangLang($event.value)" [(value)]="language">
       <mat-option
