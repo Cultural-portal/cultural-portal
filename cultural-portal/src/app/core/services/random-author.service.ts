@@ -7,7 +7,7 @@ import authorsList from '../../../assets/data/authors.json';
 })
 export class RandomAuthorService {
 
-  
+
   private authors: AuthorsRoot = <AuthorsRoot>authorsList;
   public authorOfDay: Authors;
   private min: number;
