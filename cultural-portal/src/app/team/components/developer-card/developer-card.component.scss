@@ -1,3 +1,21 @@
 .card {
   max-width: 300px;
+  margin-bottom: 25px;
+  background-color: #8f8376;
+
+  color: rgb(235, 224, 211);
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 0px 0px 5px 0px rgba(24, 21, 19, 0.75);
+  }
+}
+
+img {
+  width: calc(90% + 32px);
+  margin: 0 auto;
+}
+mat-card-actions {
+  display: flex;
+  justify-content: center;
 }
