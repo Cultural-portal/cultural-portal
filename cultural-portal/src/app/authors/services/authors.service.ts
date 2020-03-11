@@ -10,7 +10,7 @@ import { StateService } from 'src/app/shared/services/state.service.js';
 })
 export class AuthorsService {
   private authors: AuthorsRoot = <AuthorsRoot>authorsList;
-  
+
   constructor(private stateService: StateService) {}
 
   public getAuthors(ln: Language = Language.ru): Observable<Authors[]> {
@@ -24,14 +24,14 @@ export class AuthorsService {
     }
   }
 
-  public getAuthor(id: string, ln: Language = Language.ru): Observable<Authors> {
+  public getAuthor(id: number, ln: Language = Language.ru): Observable<Authors> {
     switch (ln) {
       case Language.ru:
-        return of(this.authors.authorsRU[id]);
+        return of(this.authors.authorsRU.find(val => val.id === id));
       case Language.be:
-        return of(this.authors.authorsBE[id]);
+        return of(this.authors.authorsBE.find(val => val.id === id));
       default:
-        return of(this.authors.authorsEN[id]);
+        return of(this.authors.authorsEN.find(val => val.id === id));
     }
   }
 

@@ -31,5 +31,6 @@ export class AuthorsListComponent implements OnInit {
     });
 
     this.authorsService.getAuthors(Language.ru);
+    this.authorsService.getAuthor(1, Language.ru).subscribe(val => console.log(val) );
   }
 }
