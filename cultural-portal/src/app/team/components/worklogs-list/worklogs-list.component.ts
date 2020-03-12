@@ -9,6 +9,7 @@ import { Activity, DeveloperActivity } from '../../models/developer-activity.mod
 export class WorklogsListComponent implements OnInit {
 
   @Input() public worklogs: DeveloperActivity[];
+  @Input() public title: string;
 
   constructor() { }
 
