@@ -1,15 +1,28 @@
-<mat-card class='wrapper-author'>
+<mat-card class="wrapper-author">
   <mat-card-header>
-    <mat-card-title> {{ author.name }} {{ author.surname }} </mat-card-title>
-    <mat-card-subtitle>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</mat-card-subtitle>
-    <mat-card-title> {{ author.birth }} - {{ author.death }} </mat-card-title>
+    <mat-card-title>
+      {{ (author$ | async)?.name }} {{ (author$ | async)?.surname }}
+    </mat-card-title>
+    <mat-card-subtitle
+      >( {{ (author$ | async)?.realName }}
+      {{ (author$ | async)?.realPatronymic }}
+      {{ (author$ | async)?.realSurname }} )</mat-card-subtitle
+    >
+    <mat-card-title>
+      {{ (author$ | async)?.birth }} - {{ (author$ | async)?.death }}
+    </mat-card-title>
   </mat-card-header>
-  <img [src]="author.img">
-  <app-timeline [biographyArr]="author.biography"></app-timeline>
+  <img [src]="(author$ | async)?.img" />
+  <app-timeline [biographyArr]="(author$ | async)?.biography"></app-timeline>
   <ul>
-      <li *ngFor="let item of author.works">{{item}}</li>
+    <li *ngFor="let item of (author$ | async)?.works">{{ item }}</li>
   </ul>
-  <iframe class='video' [src]="getVideo(author.video)" (click)='full()' allowfullscreen>
+  <iframe
+    class="video"
+    [src]="getVideo((author$ | async)?.video)"
+    (click)="full()"
+    allowfullscreen
+  >
   </iframe>
-  <iframe [src]='getMap(author.place)'></iframe>
+  <iframe [src]="getMap((author$ | async)?.place)"></iframe>
 </mat-card>
