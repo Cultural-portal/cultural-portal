@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'prefix' },
   { path: 'authors', loadChildren: () => import('./authors/authors.module').then(m => m.AuthorsModule) },
   { path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule) },
-  { path: 'main', loadChildren: () => import('./core/core.module').then(m => m.CoreModule) }
+  { path: 'main', loadChildren: () => import('./core/core.module').then(m => m.CoreModule) },
 ];
 
 @NgModule({
