@@ -1,9 +1,11 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { Authors } from '../../models/author.model';
-import { ActivatedRoute, Router, ParamMap } from '@angular/router';
-import { map } from 'rxjs/operators';
-import { Subscription } from 'rxjs';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Subscription} from 'rxjs';
+import {AuthorsService} from "../../services/authors.service";
+import {StateService} from "../../../shared/services/state.service";
+import {Language} from "../../../core/models/language.enum";
+import {Authors} from "../../models/author.model";
 
 @Component({
   selector: 'app-author-info',
@@ -13,17 +15,23 @@ import { Subscription } from 'rxjs';
 export class AuthorInfoComponent implements OnInit, OnDestroy {
   public author: Authors;
   public subscription: Subscription;
+  public langSubscription: Subscription;
+  public language$: Language;
+
   constructor(
     private sanitizer: DomSanitizer,
     private route: ActivatedRoute,
-    public router: Router
-  ) {}
+    public router: Router,
+    public authorService: AuthorsService,
+    private stateService: StateService
+  ) {
+  }
 
   public ngOnInit(): void {
+    this.langSubscription = this.stateService.language$.subscribe(value => this.language$ = value);
     this.subscription = this.route.queryParams.subscribe(value => {
-        this.author = <Authors>JSON.parse(value.item);
-        console.log(value.items);
-      });
+      [this.author] = this.authorService.getOneAuthor(+value.item, this.language$);
+    });
   }
 
   public ngOnDestroy(): void {
