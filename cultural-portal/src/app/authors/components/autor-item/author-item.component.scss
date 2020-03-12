@@ -1,13 +1,13 @@
 .example_card {
-  max-width: 600px;
+  width: 580px;
   min-height: 355px;
   display: grid;
   grid-template-columns: 40% 60%;
   padding: 10px;
   grid-gap: 5px;
   align-items: center;
-  margin-bottom: 10px;
-
+  margin-bottom: 30px;
+  background-color: rgb(95, 82, 70);
 
   &--image {
     max-width: 240px;
@@ -22,7 +22,10 @@
   &--content {
     padding-left: 15px;
   }
-
+  &--content {
+    font-size: 1em;
+    color: rgb(221, 215, 206);
+  }
 
   &--button_wrap {
     display: flex;
@@ -35,6 +38,9 @@
     border: 1px solid;
     margin-bottom: 10px;
   }
+}
+.author_birth {
+  font-size: 1.2em;
 }
 
 @media (max-width: 500px) {

@@ -3,14 +3,14 @@
   <mat-card-header class="example_card--header">
     <mat-card-title>{{author.name}} {{author.surname}}</mat-card-title>
     <mat-card-subtitle>{{author.realSurname}} {{author.realName}} {{author.realPatronymic}}</mat-card-subtitle>
-    <mat-card-title>{{author.birth}} - {{author.death}}</mat-card-title>
+    <mat-card-title class='author_birth'>{{author.birth}} - {{author.death}}</mat-card-title>
   </mat-card-header>
   <mat-card-content class="example_card--content">
     <p>{{author.summaryBiography}}</p>
   </mat-card-content>
   <mat-card-actions class="example_card--button_wrap">
-    <button (click)="onInfo()" class="example_card--button" color="primary"
-            mat-button>{{ 'More information' | translate: (language$ | async)}}</button>
+    <button (click)="onInfo()" class="example_card--button"
+    mat-stroked-button>{{ 'More information' | translate: (language$ | async)}}</button>
   </mat-card-actions>
 </mat-card>
 <mat-divider></mat-divider>

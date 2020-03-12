@@ -1,6 +1,11 @@
 .search_block {
   display: flex;
   justify-content: center;
+  width: 55%;
+  min-width: 565px;
+  margin: 0 auto;
+
+  background-color: rgba(173, 154, 133, 0.479);
 }
 
 @media (max-width: 650px) {

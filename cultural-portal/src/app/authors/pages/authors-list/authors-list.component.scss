@@ -1,9 +1,6 @@
 :host {
-  display: grid;
   max-width: 1440px;
   margin: 0 auto;
-  grid-template-columns: 50% 50%;
-  justify-content: center;
 }
 
 .cardList > * {
@@ -11,18 +8,20 @@
 }
 
 .searchPanel {
-  grid-column: 1/3;
-  margin-bottom: 10px;
-  justify-content: center;
+  padding-top: 90px;
+  background-color: rgb(114, 100, 87);
 }
 .hidden{
   display: none;
 }
 .cardList {
-  grid-column: 1/3;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  background-color: rgb(148, 136, 120);
 }
 
 @media (max-width: 650px) {
