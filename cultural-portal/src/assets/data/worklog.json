@@ -40,6 +40,10 @@
           {
             "hours": "2h",
             "description": "search information how insert video in iframe"
+          },
+          {
+            "hours": "2h",
+            "description": " refactor component author list & author info for responsive markup"
           }
         ]
       },
@@ -304,6 +308,10 @@
           {
             "hours": "2ч",
             "description": "поиск информации как вставить видео в iframe"
+          },
+          {
+            "hours": "2ч",
+            "description": "переделал компонент список авторов и информация об авторе для гибкой верстки"
           }
         ]
       },
@@ -572,6 +580,10 @@
           {
             "hours": "2ч",
             "description": "пошук інфармацыі як ўставіць відэа ў iframe"
+          },
+          {
+            "hours": "2ч",
+            "description": "перарабіў кампанент спіс аўтараў і інфармацыя аб аўтары для гнуткай вёрсткі"
           }
         ]
       },
