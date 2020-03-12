@@ -7,7 +7,7 @@
   grid-gap: 5px;
   align-items: center;
   margin-bottom: 30px;
-  background-color: rgb(95, 82, 70);
+  background-color: rgb(122, 111, 100);
 
   &--image {
     max-width: 240px;
@@ -48,3 +48,11 @@
     font-size: 12px;
   }
 }
+@media (max-width: 653px) {
+  .example_card {
+    width: 85%;
+    min-width: 200px;
+    margin: 20px auto;
+  }
+}
+

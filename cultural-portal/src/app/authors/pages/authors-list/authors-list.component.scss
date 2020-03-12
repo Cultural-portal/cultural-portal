@@ -9,7 +9,7 @@
 
 .searchPanel {
   padding-top: 90px;
-  background-color: rgb(114, 100, 87);
+  background-color: rgb(155, 144, 132);
 }
 .hidden{
   display: none;
@@ -21,15 +21,15 @@
   padding-top: 40px;
   padding-bottom: 20px;
 
-  background-color: rgb(148, 136, 120);
+  background-color: rgb(170, 160, 149);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 653px) {
   .searchPanel {
-    margin: 5px 15px;
+    padding-top: 60px;
   }
-  .cardList{
-    margin: 5px 15px;
+  .cardList {
+    padding-top: 20px;
   }
 }
 

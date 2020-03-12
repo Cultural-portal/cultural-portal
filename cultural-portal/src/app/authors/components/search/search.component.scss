@@ -5,13 +5,17 @@
   min-width: 565px;
   margin: 0 auto;
 
-  background-color: rgba(173, 154, 133, 0.479);
+  background-color: rgb(139, 129, 116);
 }
 
-@media (max-width: 650px) {
+
+@media (max-width: 653px) {
   .search_block {
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: column;
+    // align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 200px;
   }
 }
 
