@@ -1,15 +1,20 @@
 <mat-card class="wrapper_author">
-  <mat-card-header class="wrapper_author--header">
-    <mat-card-title> {{ author.name }} {{ author.surname }} </mat-card-title>
-    <mat-card-subtitle>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</mat-card-subtitle>
-    <mat-card-title> {{ author.birth }} - {{ author.death }} </mat-card-title>
-  </mat-card-header>
-  <img [src]="author.img" class="wrapper_author--image">
-  <app-timeline [biographyArr]="author.biography" class="wrapper_author--timeline"></app-timeline>
-  <ul class="wrapper_author--works">
-      <li *ngFor="let item of author.works">{{item}}</li>
-  </ul>
-  <iframe class='video wrapper_author--video' [src]="getVideo(author.video)" (click)='full()' allowfullscreen>
-  </iframe>
-  <iframe [src]='getMap(author.place)' class="wrapper_author--map"></iframe>
+  <div class='wrapper_author--main'>
+    <img [src]="author.img" class="wrapper_author--image">
+    <mat-card-header class="wrapper_author--header">
+      <mat-card-title  class='wrapper_author--name'> {{ author.name }} {{ author.surname }} </mat-card-title>
+      <mat-card-subtitle class='wrapper_author--realName'>( {{ author.realName }} {{ author.realPatronymic }} {{ author.realSurname }} )</mat-card-subtitle>
+      <mat-card-title> {{ author.birth }} - {{ author.death }} </mat-card-title>
+    </mat-card-header>
+  </div>
+  <div class='wrapper_author--info'>
+    <app-timeline [biographyArr]="author.biography" class="wrapper_author--timeline"></app-timeline>
+    <ul class="wrapper_author--works">
+      <h3 class='works__title'>Works</h3>
+        <li *ngFor="let item of author.works">{{item}}</li>
+    </ul>
+    <iframe class='video wrapper_author--video' [src]="getVideo(author.video)" (click)='full()' allowfullscreen>
+    </iframe>
+    <iframe [src]='getMap(author.place)' class="wrapper_author--map"></iframe>
+  </div>
 </mat-card>

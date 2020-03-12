@@ -1,14 +1,15 @@
 //color component
 $color-vertical-line: #c5c5c5;
-$color-bg-year: rgba(230, 33, 99, 1);
-$color-bg-year-shadow: rgba(230, 33, 99, .5);
-$color-title: rgba(233, 80, 99, 1);
-$color-text-data: white;
+$color-bg-year: rgb(141, 94, 72);
+$color-bg-year-shadow: rgba(175, 123, 45, 0.5);
+$color-title: rgb(185, 128, 89);
+$color-text-data: rgb(235, 231, 220);
 
 .timeline {
   position: relative;
   margin: 10px auto;
   max-width: 1000px;
+  background-color: rgb(82, 75, 67);
 
   &:before {
     content: '';
@@ -24,6 +25,7 @@ $color-text-data: white;
 .list {
   margin: 0;
   padding: 0;
+  color:$color-text-data;
 
   &--item {
     list-style: none;
