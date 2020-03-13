@@ -8,9 +8,15 @@
 }
 
 .mat-list-item {
-  color: #c5c5c5;
+  height: 100%;
+  margin: 15px 0;
+  color: #dacbbe;
 }
 
 .mat-checkbox {
   margin-right: 20px;
 }
+mat-panel-title {
+  color: rgb(247, 238, 228);
+}
+

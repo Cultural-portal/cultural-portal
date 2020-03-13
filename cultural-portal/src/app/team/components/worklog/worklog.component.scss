@@ -1,7 +1,16 @@
 .mat-expansion-panel {
   background-color: #7e7366;
+  
 }
-
+mat-panel-title {
+  color: rgb(247, 238, 228);
+}
 table {
   width: 100%;
+  background-color: rgb(202, 189, 177);
+}
+th,
+td {
+  color: rgb(94, 82, 73);
+  border-bottom: rgb(145, 133, 117);
 }
