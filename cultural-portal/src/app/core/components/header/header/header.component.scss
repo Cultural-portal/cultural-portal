@@ -13,7 +13,9 @@ $base-color: rgb(180, 178, 166);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding: 0 30px;
+    margin: 7px 0;
 
     list-style: none;
     font-size: 1em;

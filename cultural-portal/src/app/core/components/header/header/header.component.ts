@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   public ngOnInit(): void {
 
     this.breakpointObserver
-    .observe(['(min-width: 650px)'])
+    .observe(['(min-width: 965px)'])
     .subscribe((state: BreakpointState) => {
       if (state.matches) {
         this.showMobile = true;
