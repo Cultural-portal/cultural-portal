@@ -1,17 +1,56 @@
 {
     "en": {
-        "introduction": "Belarus is famous for many things but how about its literature? Typical associations with the country are sports, quality goods, and untouched nature. However, Belarusian literature can also positively surprise you.",
-        "aboutLiterature": "Belarusian literature began to evolve as early as the 14th-15 centuries, on the basis of the Old-Slavonic and later Old-Belarusian languages. Psaltyr by Francysk Skaryna was the first Belarusian book printed in Prague and one of the earliest translations of a Bible text into a native tongue in general.",
-        "aboutPortal": "This portal introduces you to the great Poets of the Republic of Belarus. Here you can find their biography and works. And we're sure you'll be deeply touched by our heritage!"
+        "aboutUs":
+        {
+            "title": "About Us",
+            "introduction": "Belarus is famous for many things but how about its literature? Typical associations with the country are sports, quality goods, and untouched nature. However, Belarusian literature can also positively surprise you.",
+            "aboutLiterature": "Belarusian literature began to evolve as early as the 14th-15 centuries, on the basis of the Old-Slavonic and later Old-Belarusian languages. Psaltyr by Francysk Skaryna was the first Belarusian book printed in Prague and one of the earliest translations of a Bible text into a native tongue in general.",
+            "aboutPortal": "This portal introduces you to the great Poets of the Republic of Belarus. Here you can find their biography and works. And we're sure you'll be deeply touched by our heritage!"
+        },
+        "authorOfDay":
+        {
+            "title": "Author of Day",
+            "job": "Author",
+            "name": "Real name:",
+            "birth": "Birth date:",
+            "death": "Death date:",
+            "moreBtn": "More"
+        }
     },
     "ru": {
-        "introduction": "Беларусь славится многим, но что насчёт литературы? Страна обычно ассоциируется со спортом, качественной продукцией и природой, к которой не прикоснулась рука человека. Тем не менее, белорусская литература может приятно удивить Вас.",
-        "aboutLiterature": "Белорусская литература начала своё развитие в 14-15 веках, базируясь на старославянском, а затем на старобелорусском языках. Первая книга - 'Псалтырь' Франциска Скорины, которая была напечатана в Праге. 'Псалтырь' - один из первых переводов Библии на родной язык.",
-        "aboutPortal": "Этот портал познакомит Вас с величайшими писателями Республики Беларусь. Здесь Вы найдёте их биографию и работы. И мы не сомневаемся, что Вы будете глубоко тронуты наследием нашего государства!"
+        "aboutUs":
+        {
+            "title": "О Нас",
+            "introduction": "Беларусь славится многим, но что насчёт литературы? Страна обычно ассоциируется со спортом, качественной продукцией и природой, к которой не прикоснулась рука человека. Тем не менее, белорусская литература может приятно удивить Вас.",
+            "aboutLiterature": "Белорусская литература начала своё развитие в 14-15 веках, базируясь на старославянском, а затем на старобелорусском языках. Первая книга - 'Псалтырь' Франциска Скорины, которая была напечатана в Праге. 'Псалтырь' - один из первых переводов Библии на родной язык.",
+            "aboutPortal": "Этот портал познакомит Вас с величайшими писателями Республики Беларусь. Здесь Вы найдёте их биографию и работы. И мы не сомневаемся, что Вы будете глубоко тронуты наследием нашего государства!"
+        },
+        "authorOfDay":
+        {
+            "title": "Автор дня",
+            "job": "Автор",
+            "name": "Настоящее имя:",
+            "birth": "Дата рождения:",
+            "death": "Дата смерти:",
+            "moreBtn": "Больше информации"
+        }
     },
     "be": {
-        "introduction": "Беларусь славіцца шматлікім, але што наконт літаратуры? Краіна звычайна асацыюецца са спортам, якаснай прадукцыяй і прыродай, да якой не дакранулася рука чалавека. Тым не менш, беларуская літаратура можа прыемна здзівіць Вас.",
-        "aboutLiterature": "Беларуская літаратура пачала сваё развіццё ў 14-15 стагоддзях, грунтуючыся на стараславянскай, а потым на старабеларускай мовах. Першая кніга - 'Псалтыр' Францыска Скарыны, надрукаваная ў Празе. 'Псалтыр' - адзін з першых перакладаў Бібліі на родную мову.",
-        "aboutPortal": "Гэты партал пазнаёміць Вас з найвялікшымі пісьменнікамі Рэспублікі Беларусь. Тут Вы знойдзеце іх біяграфію і творы. І мы не сумняваемся, што Вы будзеце глыбока крануты спадчынай нашай дзяржавы!"
+        "aboutUs":
+        {
+            "title": "Пра Нас",
+            "introduction": "Беларусь славіцца шматлікім, але што наконт літаратуры? Краіна звычайна асацыюецца са спортам, якаснай прадукцыяй і прыродай, да якой не дакранулася рука чалавека. Тым не менш, беларуская літаратура можа прыемна здзівіць Вас.",
+            "aboutLiterature": "Беларуская літаратура пачала сваё развіццё ў 14-15 стагоддзях, грунтуючыся на стараславянскай, а потым на старабеларускай мовах. Першая кніга - 'Псалтыр' Францыска Скарыны, надрукаваная ў Празе. 'Псалтыр' - адзін з першых перакладаў Бібліі на родную мову.",
+            "aboutPortal": "Гэты партал пазнаёміць Вас з найвялікшымі пісьменнікамі Рэспублікі Беларусь. Тут Вы знойдзеце іх біяграфію і творы. І мы не сумняваемся, што Вы будзеце глыбока крануты спадчынай нашай дзяржавы!"
+        },
+        "authorOfDay":
+        {
+            "title": "Аўтар дня",
+            "job": "Аўтар",
+            "name": "Сапраўднае імя:",
+            "birth": "Дата нараджэння:",
+            "death": "Дата смерці:",
+            "moreBtn": "Больш інфармацыі"
+        }
     }
 }

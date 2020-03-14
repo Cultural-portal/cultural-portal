@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { RandomAuthorService } from 'src/app/core/services/random-author.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { RandomAuthorService } from 'src/app/core/services/randomAuthor/random-author.service';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
 
@@ -19,9 +19,16 @@ export class AuthorOfDayComponent implements OnInit {
   public death: string;
   public showMobile: boolean;
 
+  @Input() public title: string;
+  @Input() public job: string;
+  @Input() public name: string;
+  @Input() public birthDate: string;
+  @Input() public deathDate: string;
+  @Input() public moreBtn: string;
+
   constructor(private randomAuthorService: RandomAuthorService,
-              public breakpointObserver: BreakpointObserver,
-              private router: Router) {
+    public breakpointObserver: BreakpointObserver,
+    private router: Router) {
   }
 
   public ngOnInit(): void {
