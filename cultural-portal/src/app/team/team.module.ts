@@ -20,6 +20,7 @@ import { MainDifficultiesComponent } from './components/main-difficulties/main-d
 import { EvaluationListComponent } from './components/evaluation-list/evaluation-list.component';
 import { WorklogComponent } from './components/worklog/worklog.component';
 import { EvaluationScopeComponent } from './components/evaluation-scope/evaluation-scope.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { EvaluationScopeComponent } from './components/evaluation-scope/evaluati
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
+    SharedModule
   ],
   exports: [DevelopersComponent, WorklogPageComponent]
 })
