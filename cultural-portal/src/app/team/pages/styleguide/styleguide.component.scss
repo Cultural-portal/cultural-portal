@@ -1,0 +1,48 @@
+$title-color: rgb(73, 59, 50);
+
+:host {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgb(160, 149, 137);
+}
+h2 {
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 20px;
+  color: $title-color;
+  border-bottom: 2px solid $title-color;
+}
+.card {
+  max-width: 300px;
+  margin: 30px 0;
+}
+.styleguide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.styleguide__item {
+  text-align: center;
+  padding-top: 30px;
+}
+h3 {
+  font-size: 1.3em;
+  color: rgb(59, 51, 41);
+}
+mat-expansion-panel {
+  margin-top: 40px;
+}
+
+
+@media(max-width: 700px) {
+  h2 {
+    width: 80%;
+    padding-top: 5px;
+  }
+}

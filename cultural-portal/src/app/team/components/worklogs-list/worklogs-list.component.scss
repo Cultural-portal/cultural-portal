@@ -1,3 +1,18 @@
+$title-color: rgb(68, 60, 51); // rgb(247, 239, 230)
+
 .worklogs-headline {
-  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid $title-color;
+  font-size: 1.8em;
+  color: $title-color;
+}
+
+@media(max-width: 700px) {
+  .worklogs-headline {
+    width: 80%;
+  }
 }

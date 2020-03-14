@@ -1,10 +1,22 @@
-:host {
-  color: black;
+.search_block {
   display: flex;
-  flex-direction: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 55%;
+  min-width: 565px;
+  margin: 0 auto;
 
+  background-color: rgb(145, 134, 121);
+}
+
+
+@media (max-width: 653px) {
+  .search_block {
+    // flex-direction: column;
+    // align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 200px;
+  }
 }
 
 

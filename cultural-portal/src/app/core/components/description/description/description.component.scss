@@ -1,7 +1,7 @@
 $border-color: rgb(133, 131, 123);
 
 .description {
-    background-color: rgb(224, 215, 194);
+    background-color: rgb(180, 167, 153);
     color: rgb(68, 58, 47);
     
     .container {
@@ -9,43 +9,41 @@ $border-color: rgb(133, 131, 123);
         max-width: 900px;
         margin: 0 auto;
         padding: 40px 0;
+    }
+}
+.description__title {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+.description__text-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
 
-        .description__title {
-            text-decoration: underline;
-            font-size: 1.5em;
-        }
-        .description__text-desktop {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 40px;
-        
-            .about-literature {
-                padding: 0 20px;
-                border-left: 1px dotted $border-color;
-                border-right: 1px dotted $border-color;
-            }
-            p {
-                width: 30%;
-                min-width: 60px;
-                font-size: 1.1em;
-            }
-        }
-    
-        .description__text-mobile {
-            margin-top: 40px;
-            margin-bottom: 20px;
+    .about-literature {
+        padding: 0 20px;
+        border-left: 1px dotted $border-color;
+        border-right: 1px dotted $border-color;
+    }    
+    p {
+        width: 30%;
+        min-width: 60px;
+        font-size: 1.1em;
+    }
+}
+.description__text-mobile {
+    margin-top: 40px;
+    margin-bottom: 20px;
 
-            .about-literature {
-                margin: 20px auto;
-                padding: 20px 0;
-                border-top: 1px dotted $border-color;
-                border-bottom: 1px dotted $border-color;
-            }
-            p {
-                width: 86%;
-                margin: 0 auto;
-            }
-        }
+    .about-literature {
+        margin: 20px auto;
+        padding: 20px 0;
+        border-top: 1px dotted $border-color;
+        border-bottom: 1px dotted $border-color;
+    }    
+    p {
+        width: 86%;
+        margin: 0 auto;
     }
 }

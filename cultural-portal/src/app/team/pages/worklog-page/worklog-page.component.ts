@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { StateService } from 'src/app/shared/services/state.service';
 import { skip, switchMap } from 'rxjs/operators';
 
+
 @Component({
   selector: 'app-worklog-page',
   templateUrl: './worklog-page.component.html',
@@ -20,10 +21,12 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
     private activateRoute: ActivatedRoute,
     private stateService: StateService) { }
 
+
   public ngOnInit(): void {
     this.subscription = this.activateRoute.data.subscribe((data) => {
       this.data = data.data;
     });
+
     this.stateService.language$
       .pipe(
         skip(1),
@@ -32,6 +35,7 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
       .subscribe((data: Worklog) => {
         this.data = data;
       });
+
   }
 
   public ngOnDestroy(): void {

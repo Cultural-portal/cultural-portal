@@ -1,6 +1,6 @@
-<mat-card appElevation>
+<mat-card appElevation class="search_block">
   <mat-form-field>
-    <mat-label>{{'Search' | translate: (language$ |async) }}</mat-label>
+    <mat-label>{{'Search' | translate: language}}</mat-label>
     <mat-select  (selectionChange)="onChangeTypeSearch($event.value)" [(value)]="search">
       <mat-option
         *ngFor="let search of listSearch"
@@ -14,6 +14,4 @@
     <mat-label>{{'enter text' | translate: (language$ |async)}}</mat-label>
     <input matInput type="text" [formControl]="controlSearchInput">
   </mat-form-field>
-
-
 </mat-card>

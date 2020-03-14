@@ -1,41 +1,41 @@
-<nav class="header__navigation">
-  <ul class="header__navigation_list-desktop" *ngIf="showMobile">
-    <li><a routerLink="" mat-button>{{'About' | translate : language}}</a></li>
-    <li><a routerLink="../authors/list" mat-button>{{'List of Authors' | translate : language}}</a></li>
-    <li><a routerLink="../team/developers" mat-button>{{'Team members' | translate : language}}</a></li>
-    <li><a routerLink="../team/worklog" mat-button>{{'Worklog' | translate : language}}</a></li>
-    <li><a routerLink="" mat-button>{{'Styleguide' | translate : language}}</a></li>
-    <mat-form-field>
-      <mat-label>{{'Choose lang' | translate: language}}</mat-label>
-      <mat-select (selectionChange)="onChangLang($event.value)" [(value)]="language">
-        <mat-option
-          *ngFor="let lang of listLng"
-          [value]="lang"
-        >
-          {{ lang | translate: language}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </ul>
-  <div class="header__navigation_list-mobile" *ngIf="!showMobile">
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-      <a routerLink="" mat-menu-item>{{'About' | translate : language}}</a>
-      <a routerLink="./authors/list" mat-menu-item>{{'List of Authors' | translate : language}}</a>
-      <a routerLink="./team/developers" mat-menu-item>{{'Team members' | translate : language}}</a>
-      <a routerLink="./team/worklog" mat-menu-item>{{'Worklog' | translate : language}}</a>
-      <a routerLink="" mat-menu-item>{{'Styleguide' | translate : language}}</a>
-    </mat-menu>
-    <mat-form-field>
-      <mat-label>{{'Choose lang' | translate: language}}</mat-label>
-      <mat-select (selectionChange)="onChangLang($event.value)" [(value)]="language">
-        <mat-option
-          *ngFor="let lang of listLng"
-          [value]="lang"
-        >
-          {{ lang | translate: language}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
+<nav class='header__navigation'>
+    <ul class='header__navigation_list-desktop' *ngIf='showMobile'>
+        <li><a routerLink="" mat-button>{{'About' | translate : language}}</a></li>
+        <li><a routerLink="../authors/list" mat-button>{{'List of Authors' | translate : language}}</a></li>
+        <li><a routerLink="../team/developers" mat-button>{{'Team members' | translate : language}}</a></li>
+        <li><a routerLink="../team/worklog" mat-button>{{'Worklog' | translate : language}}</a></li>
+        <li><a routerLink="../team/styleguide" mat-button>{{'Styleguide' | translate : language}}</a></li>
+        <mat-form-field>
+          <mat-label>{{'Choose lang' | translate: language}}</mat-label>
+          <mat-select class='header__select-lang' (selectionChange)="onChangLang($event.value)" [(value)]="language">
+            <mat-option
+              *ngFor="let lang of listLng"
+              [value]="lang"
+            >
+              {{ lang | translate: language}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+    </ul>
+    <div class='header__navigation_list-mobile' *ngIf='!showMobile'>
+        <button mat-button [matMenuTriggerFor]='menu'>Menu</button>
+        <mat-menu #menu='matMenu'>
+            <a routerLink="" mat-menu-item>{{'About' | translate : language}}</a>
+            <a routerLink="./authors/list" mat-menu-item>{{'List of Authors' | translate : language}}</a>
+            <a routerLink="./team/developers" mat-menu-item>{{'Team members' | translate : language}</a>
+            <a routerLink="./team/worklog" mat-menu-item>{{'Worklog' | translate : language}}</a>
+            <a routerLink="" mat-menu-item>{{'Styleguide' | translate : language}}</a>
+        </mat-menu>
+        <mat-form-field>
+          <mat-label>{{'Choose lang' | translate: language}}</mat-label>
+          <mat-select class='header__select-lang' (selectionChange)="onChangLang($event.value)" [(value)]="language">
+            <mat-option
+              *ngFor="let lang of listLng"
+              [value]="lang"
+            >
+              {{ lang | translate: language}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
 </nav>

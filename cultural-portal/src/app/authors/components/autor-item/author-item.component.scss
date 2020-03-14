@@ -1,4 +1,58 @@
-.example-card {
-  width: 400px;
+.example_card {
+  width: 580px;
+  min-height: 355px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 10px;
+  grid-gap: 5px;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(116, 104, 94);
+
+  &--image {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin: 0;
+  }
+
+  &--header,
+  &--content {
+    padding-left: 15px;
+  }
+  &--content {
+    font-size: 1em;
+    color: rgb(221, 215, 206);
+  }
+
+  &--button_wrap {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+  }
+
+  &--button {
+    border: 1px solid;
+    margin-bottom: 10px;
+  }
+}
+.author_birth {
+  font-size: 1.2em;
+}
+
+@media (max-width: 500px) {
+  .example_card--button{
+    font-size: 12px;
+  }
+}
+@media (max-width: 653px) {
+  .example_card {
+    width: 85%;
+    min-width: 200px;
+    margin: 20px auto;
+  }
 }
 

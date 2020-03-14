@@ -1,3 +1,8 @@
-<div class="developers">
-  <app-developer-card *ngFor="let developer of developersService.developers" [developer]="developer"></app-developer-card>
+<div class='developers'>
+  <div class='developers__container'>
+    <h2>Our Team</h2>
+    <div class='developers-list'>
+      <app-developer-card *ngFor='let developer of developersService.developers' [developer]='developer'></app-developer-card>
+    </div>
+  </div>
 </div>

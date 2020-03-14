@@ -1,28 +1,36 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-
-
-.cardList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-/* Column Gap */
 .cardList > * {
   box-sizing: border-box;
 }
-.cardList > *:not(:last-child) {
-  margin-right: 32px;
+
+.searchPanel {
+  padding-top: 90px;
+  background-color: rgb(134, 123, 112);
 }
-/* Item sizing */
-.cardListItem {
-  flex: 0 1 calc(33.3% - 32px);
+.hidden{
+  display: none;
+}
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  background-color: rgb(146, 136, 125);
+}
+
+@media (max-width: 653px) {
+  .searchPanel {
+    padding-top: 60px;
+  }
+  .cardList {
+    padding-top: 20px;
+  }
 }
 
 

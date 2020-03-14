@@ -1,1 +1,48 @@
-<p>styleguide works!</p>
+<div class='styleguide'>
+  <h2>Styleguide</h2>
+  <div class='styleguide__item'>
+    <h3>Basic Buttons</h3>
+    <div class="example-button-row">
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <a mat-button routerLink=".">Link</a>
+    </div>
+  </div>
+
+  <div class='styleguide__item'>
+    <h3>Raised Buttons</h3>
+    <div class="example-button-row">
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <a mat-raised-button routerLink=".">Link</a>
+    </div>
+  </div>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Name</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="avatar">
+    <mat-card-content>
+      <p>
+        Role
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-stroked-button href="http://GitHub.com">GitHub</a>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Info</p>
+  </mat-expansion-panel>
+</div>
