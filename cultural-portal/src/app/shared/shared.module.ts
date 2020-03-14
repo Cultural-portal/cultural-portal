@@ -13,9 +13,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ElevationDirective } from './directives/elevation.directive';
 import { TranslatePipe } from './pipes/translate.pipe';
 
-
-
-
 @NgModule({
   declarations: [ElevationDirective, TranslatePipe],
   imports: [

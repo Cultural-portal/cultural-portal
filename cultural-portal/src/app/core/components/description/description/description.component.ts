@@ -12,7 +12,7 @@ export class DescriptionComponent implements OnInit {
 
   constructor(public breakpointObserver: BreakpointObserver) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
 
     this.breakpointObserver
     .observe(['(min-width: 850px)'])

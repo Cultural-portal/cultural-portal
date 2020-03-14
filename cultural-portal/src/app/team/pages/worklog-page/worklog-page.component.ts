@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
 import { StateService } from 'src/app/shared/services/state.service';
 import { skip, switchMap } from 'rxjs/operators';
 
-
 @Component({
   selector: 'app-worklog-page',
   templateUrl: './worklog-page.component.html',
@@ -20,7 +19,6 @@ export class WorklogPageComponent implements OnInit, OnDestroy {
     private worklog: WorklogService,
     private activateRoute: ActivatedRoute,
     private stateService: StateService) { }
-
 
   public ngOnInit(): void {
     this.subscription = this.activateRoute.data.subscribe((data) => {

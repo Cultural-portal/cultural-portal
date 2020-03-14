@@ -5,7 +5,7 @@ import { Directive, Input, ElementRef,
 @Directive({
   selector: '[appElevation]'
 })
-export class ElevationDirective implements OnChanges{
+export class ElevationDirective implements OnChanges {
   @Input()
   public defaultElevation: number = 0;
 
@@ -43,7 +43,8 @@ export class ElevationDirective implements OnChanges{
 
     // add the given elevation class
 
-    const newClass: string = `mat-elevation-z${amount}`;
+    // tslint:disable-next-line: typedef
+    const newClass = `mat-elevation-z${amount}`;
     this.renderer.addClass(this.element.nativeElement, newClass);
   }
 

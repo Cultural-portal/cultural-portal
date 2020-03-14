@@ -1,16 +1,16 @@
-import { Component, OnDestroy, OnInit, OnChanges } from "@angular/core";
-import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
-import { ActivatedRoute, Router } from "@angular/router";
-import { Subscription, Observable, BehaviorSubject } from "rxjs";
-import { AuthorsService } from "../../services/authors.service";
-import { StateService } from "../../../shared/services/state.service";
-import { Language } from "../../../core/models/language.enum";
-import { Authors } from "../../models/author.model";
+import { Component, OnDestroy, OnInit, OnChanges } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription, Observable, BehaviorSubject } from 'rxjs';
+import { AuthorsService } from '../../services/authors.service';
+import { StateService } from '../../../shared/services/state.service';
+import { Language } from '../../../core/models/language.enum';
+import { Authors } from '../../models/author.model';
 
 @Component({
-  selector: "app-author-info",
-  templateUrl: "./author-info.component.html",
-  styleUrls: ["./author-info.component.scss"]
+  selector: 'app-author-info',
+  templateUrl: './author-info.component.html',
+  styleUrls: ['./author-info.component.scss']
 })
 export class AuthorInfoComponent implements OnInit, OnDestroy {
   public author$: Observable<Authors>;
@@ -24,12 +24,12 @@ export class AuthorInfoComponent implements OnInit, OnDestroy {
     public router: Router,
     public authorService: AuthorsService,
     private stateService: StateService
-  ) {}
+  ) { }
 
   public ngOnInit(): void {
     this.langSubscription = this.language$.subscribe(value => {
       this.subscription = this.route.queryParams.subscribe(id => {
-        this.author$ = this.authorService.getAuthor(+id['item'], value);
+        this.author$ = this.authorService.getAuthor(+id.item, value);
       });
     });
 
@@ -47,7 +47,7 @@ export class AuthorInfoComponent implements OnInit, OnDestroy {
   }
 
   public full(): void {
-    let elem: Element = document.querySelector(".video");
+    let elem: Element = document.querySelector('.video');
     if (!document.fullscreenElement) {
       elem.requestFullscreen().catch(err => {
         console.log(
@@ -59,9 +59,12 @@ export class AuthorInfoComponent implements OnInit, OnDestroy {
     }
   }
 
-  public getMap(cord): SafeResourceUrl {
-    const URL_API = "https://api.opencagedata.com/";
-    const KEY = "12ff4fe1ac804a4689043079fcfc5b48";
+  public getMap(cord: string): SafeResourceUrl {
+    // tslint:disable-next-line: typedef
+    const URL_API = 'https://api.opencagedata.com/';
+    // tslint:disable-next-line: typedef
+    const KEY = '12ff4fe1ac804a4689043079fcfc5b48';
+    // tslint:disable-next-line: typedef
     const show = `${URL_API}geocode/v1/map?q=${cord}&key=${KEY}&pretty=1&no_annotations=1&abbrv=1`;
     return this.sanitizer.bypassSecurityTrustResourceUrl(show);
   }

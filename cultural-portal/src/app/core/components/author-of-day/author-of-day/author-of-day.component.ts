@@ -10,28 +10,34 @@ import {Router} from "@angular/router";
 })
 export class AuthorOfDayComponent implements OnInit {
 
+  private author: Object;
+  private id: string;
   public authorName: string;
   public realName: string;
   public img: string;
   public birth: string;
   public death: string;
   public showMobile: boolean;
-  private author: Object;
-  private id: string;
 
   constructor(private randomAuthorService: RandomAuthorService,
               public breakpointObserver: BreakpointObserver,
               private router: Router) {
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
 
     this.author = this.randomAuthorService.randomAuthor();
+    // tslint:disable-next-line: no-string-literal
     this.authorName = this.author['authorName'];
+    // tslint:disable-next-line: no-string-literal
     this.realName = this.author['realName'];
+    // tslint:disable-next-line: no-string-literal
     this.img = this.author['img'];
+    // tslint:disable-next-line: no-string-literal
     this.birth = this.author['birth'];
+    // tslint:disable-next-line: no-string-literal
     this.death = this.author['death'];
+    // tslint:disable-next-line: no-string-literal
     this.id = this.author['id'];
     this.breakpointObserver
       .observe(['(min-width: 720px)'])

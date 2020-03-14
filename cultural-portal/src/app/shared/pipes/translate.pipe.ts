@@ -3,7 +3,6 @@ import { Language } from 'src/app/core/models/language.enum';
 import { StateService } from '../services/state.service';
 import { Dictionary } from '../data/dictionary';
 
-
 @Pipe({
   name: 'translate'
 })

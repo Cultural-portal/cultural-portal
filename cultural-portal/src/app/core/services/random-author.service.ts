@@ -7,11 +7,10 @@ import authorsList from '../../../assets/data/authors.json';
 })
 export class RandomAuthorService {
 
-
-  private authors: AuthorsRoot = <AuthorsRoot>authorsList;
-  public authorOfDay: Authors;
   private min: number;
   private max: number;
+  private authors: AuthorsRoot = <AuthorsRoot>authorsList;
+  public authorOfDay: Authors;
 
   constructor() { }
 
@@ -22,7 +21,8 @@ export class RandomAuthorService {
 
     return {
       'authorName': `${this.authorOfDay.name} ${this.authorOfDay.surname}`,
-      'realName': `${this.authorOfDay.realSurname} ${this.authorOfDay.realName} ${this.authorOfDay.realPatronymic}`,
+      'realName': `${this.authorOfDay.realSurname}
+       ${this.authorOfDay.realName} ${this.authorOfDay.realPatronymic}`,
       'img': this.authorOfDay.img,
       'birth': this.authorOfDay.birth,
       'death': this.authorOfDay.death,
