@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {RandomAuthorService} from 'src/app/core/services/random-author.service';
-import {BreakpointObserver, BreakpointState} from '@angular/cdk/layout';
-import {Router} from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { RandomAuthorService } from 'src/app/core/services/random-author.service';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-author-of-day',
@@ -52,6 +52,6 @@ export class AuthorOfDayComponent implements OnInit {
 
   public navigateAuthor(): void {
     this.router.navigate(['authors/info'],
-      {queryParams: {item: this.id}});
+                         { queryParams: { item: this.id } });
   }
 }
