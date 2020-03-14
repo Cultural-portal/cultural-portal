@@ -1,5 +1,8 @@
 {
-  "EN": {
+  "en": {
+    "worklogsTitle": "Developers worklogs:",
+    "mainDifficultiesTitle": "Main difficulties:",
+    "evaluationTitle": "Evaluation:",
     "worklogs": [
       {
         "name": "Uladzimir Kazak",
@@ -267,7 +270,10 @@
       }
     ]
   },
-  "RU": {
+  "ru": {
+    "worklogsTitle": "Рабочие журналы разработчиков:",
+    "mainDifficultiesTitle": "Основные трудности:",
+    "evaluationTitle": "Оценка:",
     "worklogs": [
       {
         "name": "Uladzimir Kazak",
@@ -539,7 +545,10 @@
       }
     ]
   },
-  "BE": {
+  "be": {
+    "worklogsTitle": "Рабочыя часопісы распрацоўшчыкаў:",
+    "mainDifficultiesTitle": "Асноўныя цяжкасці:",
+    "evaluationTitle": "Адзнака:",
     "worklogs": [
       {
         "name": "Uladzimir Kazak",

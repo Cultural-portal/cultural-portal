@@ -13,6 +13,8 @@ import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { RouterModule } from '@angular/router';
     DescriptionComponent,
     TitleComponent,
     AuthorOfDayComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     CommonModule,
@@ -30,7 +33,8 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
-    RouterModule
+    RouterModule,
+    SharedModule,
   ],
   exports: [
     HeaderComponent,

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MainDifficultiesComponent implements OnInit {
 
   @Input() public mainDifficulties: string[];
+  @Input() public title: string;
 
   constructor() { }
 

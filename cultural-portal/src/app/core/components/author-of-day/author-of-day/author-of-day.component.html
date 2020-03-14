@@ -8,7 +8,7 @@
                 <mat-card-title>{{authorName}}</mat-card-title>
                 <mat-card-subtitle>Author</mat-card-subtitle>
                 </mat-card-header>
-                
+
                 <mat-card-content>
                 <p>
                     <span>Real name:</span> {{realName}} <br>
@@ -17,7 +17,7 @@
                 </p>
                 </mat-card-content>
                 <mat-card-actions>
-                <button mat-button>MORE</button>
+                <button (click)="navigateAuthor()" mat-button>MORE</button>
                 </mat-card-actions>
             </div>
         </mat-card>
@@ -34,9 +34,12 @@
                 <span>Death date:</span> {{death}}
             </p>
             </mat-card-content>
+<!--          Внутри не работает, не понимаю почему?-->
             <mat-card-actions>
-            <button mat-stroked-button>MORE</button>
+            <button mat-button (click)="navigateAuthor()">MORE</button>
             </mat-card-actions>
         </mat-card>
+<!--      Тут Работает-->
+      <button mat-button (click)="navigateAuthor()">MORE</button>
     </div>
 </div>

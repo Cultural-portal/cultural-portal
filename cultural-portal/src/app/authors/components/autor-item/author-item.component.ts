@@ -1,9 +1,10 @@
-import { Component, OnInit, Input, ViewChild, AfterViewInit } from '@angular/core';
-import { Authors } from '../../models/author.model';
-import { Router } from '@angular/router';
-import { Language } from '../../models/language.enum';
-import { Observable, of } from 'rxjs';
-import { AuthorsService } from '../../services/authors.service';
+import {Component, Input, OnInit} from '@angular/core';
+import {Authors} from '../../models/author.model';
+import {Router} from '@angular/router';
+
+import {Observable} from 'rxjs';
+import {Language} from 'src/app/core/models/language.enum';
+import {StateService} from 'src/app/shared/services/state.service';
 
 @Component({
   selector: 'app-author-item',
@@ -15,15 +16,16 @@ export class AuthorItemComponent implements OnInit {
   public language$: Observable<Language>;
 
 
-  constructor(private router: Router, private authorsService: AuthorsService) { }
+  constructor(private router: Router, private stateService: StateService) {
+  }
 
   public ngOnInit(): void {
-    this.language$ = this.authorsService.language$;
-
+    this.language$ = this.stateService.language$;
   }
+
   public onInfo(): void {
     this.router.navigate(['authors/info'],
-                         { queryParams: { item: JSON.stringify(this.author) } });
+      {queryParams: {item: this.author.id}});
   }
 
 }

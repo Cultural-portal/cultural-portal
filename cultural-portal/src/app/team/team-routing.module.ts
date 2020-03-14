@@ -5,6 +5,7 @@ import { WorklogPageComponent } from './pages/worklog-page/worklog-page.componen
 import { WorklogResolverGuard } from './guards/worklog-resolver.guard';
 import { StyleguideComponent } from './pages/styleguide/styleguide.component';
 
+
 const routes: Routes = [
   {
     path: 'developers', component: DevelopersComponent,

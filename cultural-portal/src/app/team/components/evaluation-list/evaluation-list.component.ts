@@ -9,6 +9,7 @@ import { EvaluationScope, EvaluationrRequirement } from '../../models/evaluation
 export class EvaluationListComponent implements OnInit {
 
   @Input() public evaluation: EvaluationScope[];
+  @Input() public title: string;
 
   constructor() { }
 

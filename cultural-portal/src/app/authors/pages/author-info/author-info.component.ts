@@ -1,34 +1,43 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { Authors } from '../../models/author.model';
-import { ActivatedRoute, Router, ParamMap } from '@angular/router';
-import { map } from 'rxjs/operators';
-import { Subscription } from 'rxjs';
+import { Component, OnDestroy, OnInit, OnChanges } from "@angular/core";
+import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Subscription, Observable, BehaviorSubject } from "rxjs";
+import { AuthorsService } from "../../services/authors.service";
+import { StateService } from "../../../shared/services/state.service";
+import { Language } from "../../../core/models/language.enum";
+import { Authors } from "../../models/author.model";
 
 @Component({
-  selector: 'app-author-info',
-  templateUrl: './author-info.component.html',
-  styleUrls: ['./author-info.component.scss']
+  selector: "app-author-info",
+  templateUrl: "./author-info.component.html",
+  styleUrls: ["./author-info.component.scss"]
 })
 export class AuthorInfoComponent implements OnInit, OnDestroy {
-  public author: Authors;
+  public author$: Observable<Authors>;
   public subscription: Subscription;
+  public langSubscription: Subscription;
+  public language$: BehaviorSubject<Language> = this.stateService.language$;
+
   constructor(
     private sanitizer: DomSanitizer,
     private route: ActivatedRoute,
-    public router: Router
+    public router: Router,
+    public authorService: AuthorsService,
+    private stateService: StateService
   ) {}
 
   public ngOnInit(): void {
-    this.subscription = this.route.queryParams.subscribe(value => {
-        this.author = <Authors>JSON.parse(value.item);
-        console.log(value.items);
+    this.langSubscription = this.language$.subscribe(value => {
+      this.subscription = this.route.queryParams.subscribe(id => {
+        this.author$ = this.authorService.getAuthor(+id['item'], value);
       });
+    });
+
   }
 
   public ngOnDestroy(): void {
+    this.langSubscription.unsubscribe();
     this.subscription.unsubscribe();
-
   }
 
   public getVideo(video: string): SafeResourceUrl {
@@ -38,7 +47,7 @@ export class AuthorInfoComponent implements OnInit, OnDestroy {
   }
 
   public full(): void {
-    let elem: Element = document.querySelector('.video');
+    let elem: Element = document.querySelector(".video");
     if (!document.fullscreenElement) {
       elem.requestFullscreen().catch(err => {
         console.log(
@@ -51,8 +60,8 @@ export class AuthorInfoComponent implements OnInit, OnDestroy {
   }
 
   public getMap(cord): SafeResourceUrl {
-    const URL_API = 'https://api.opencagedata.com/';
-    const KEY = '12ff4fe1ac804a4689043079fcfc5b48';
+    const URL_API = "https://api.opencagedata.com/";
+    const KEY = "12ff4fe1ac804a4689043079fcfc5b48";
     const show = `${URL_API}geocode/v1/map?q=${cord}&key=${KEY}&pretty=1&no_annotations=1&abbrv=1`;
     return this.sanitizer.bypassSecurityTrustResourceUrl(show);
   }
