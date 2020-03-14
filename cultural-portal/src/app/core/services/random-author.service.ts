@@ -1,32 +1,37 @@
 import { Injectable } from '@angular/core';
 import { AuthorsRoot, Authors } from 'src/app/authors/models/author.model';
-import authorsList from '../../../assets/data/authors.json';
+import authorsFile from '../../../assets/data/authors.json';
+import { StateService } from 'src/app/shared/services/state.service';
+import { Language } from '../models/language.enum';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RandomAuthorService {
+  private authors: AuthorsRoot = <AuthorsRoot>authorsFile;
+  private lang: string;
+  public dayAuthor: Subject<Authors> = new Subject<Authors>();
 
-  private min: number;
-  private max: number;
-  private authors: AuthorsRoot = <AuthorsRoot>authorsList;
-  public authorOfDay: Authors;
+  constructor(private stateService: StateService) {
+    this.lang = Language.ru;
+    this.randomAuthor();
+    this.stateService.language$.subscribe(lang => {
+      console.log(lang);
+      this.lang = lang;
+      this.randomAuthor();
+    });
+  }
 
-  constructor() { }
-
-  public randomAuthor(): Object {
-    this.min = 0;
-    this.max = this.authors.authorsEN.length;
-    this.authorOfDay = this.authors.authorsEN[Math.floor(Math.random() * (this.max - this.min)) + this.min];
-
-    return {
-      'authorName': `${this.authorOfDay.name} ${this.authorOfDay.surname}`,
-      'realName': `${this.authorOfDay.realSurname}
-       ${this.authorOfDay.realName} ${this.authorOfDay.realPatronymic}`,
-      'img': this.authorOfDay.img,
-      'birth': this.authorOfDay.birth,
-      'death': this.authorOfDay.death,
-      'id': this.authorOfDay.id
-    };
+  public randomAuthor(): void {
+    let authorsList: Authors[];
+    console.log(this.lang);
+    switch (this.lang) {
+      case Language.ru: authorsList = this.authors.authorsRU;
+      case Language.be: authorsList = this.authors.authorsBE;
+      case Language.en: authorsList = this.authors.authorsEN;
+      default: authorsList = this.authors.authorsRU;
+    }
+    this.dayAuthor.next(authorsList[Math.floor(Math.random() * authorsList.length)]);
   }
 }

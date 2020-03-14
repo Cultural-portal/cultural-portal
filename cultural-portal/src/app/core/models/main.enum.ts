@@ -2,7 +2,6 @@ export interface Main {
     aboutUs: AboutUs;
     authorOfDay: AuthorOfDay;
 }
-  
 export interface MainResponse {
     RU: Main;
     EN: Main;
