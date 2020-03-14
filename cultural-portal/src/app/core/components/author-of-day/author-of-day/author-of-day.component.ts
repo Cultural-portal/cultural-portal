@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { RandomAuthorService } from 'src/app/core/services/random-author.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { RandomAuthorService } from 'src/app/core/services/randomAuthor/random-author.service';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+import { Authors } from 'src/app/authors/models/author.model';
 
 @Component({
   selector: 'app-author-of-day',
@@ -10,8 +11,7 @@ import { Router } from '@angular/router';
 })
 export class AuthorOfDayComponent implements OnInit {
 
-  private author: Object;
-  private id: string;
+  private id: number;
   public authorName: string;
   public realName: string;
   public img: string;
@@ -19,26 +19,29 @@ export class AuthorOfDayComponent implements OnInit {
   public death: string;
   public showMobile: boolean;
 
+  @Input() public title: string;
+  @Input() public job: string;
+  @Input() public name: string;
+  @Input() public birthDate: string;
+  @Input() public deathDate: string;
+  @Input() public moreBtn: string;
+
   constructor(private randomAuthorService: RandomAuthorService,
               public breakpointObserver: BreakpointObserver,
               private router: Router) {
   }
 
   public ngOnInit(): void {
+    this.randomAuthorService.dayAuthor.subscribe(author => {
+      this.authorName = author.name + ' ' + author.surname;
+      this.realName = author.realName;
+      this.img = author.img;
+      this.birth = author.birth;
+      this.death = author.death;
+      this.id = author.id;
+    });
+    this.randomAuthorService.randomAuthor();
 
-    this.author = this.randomAuthorService.randomAuthor();
-    // tslint:disable-next-line: no-string-literal
-    this.authorName = this.author['authorName'];
-    // tslint:disable-next-line: no-string-literal
-    this.realName = this.author['realName'];
-    // tslint:disable-next-line: no-string-literal
-    this.img = this.author['img'];
-    // tslint:disable-next-line: no-string-literal
-    this.birth = this.author['birth'];
-    // tslint:disable-next-line: no-string-literal
-    this.death = this.author['death'];
-    // tslint:disable-next-line: no-string-literal
-    this.id = this.author['id'];
     this.breakpointObserver
       .observe(['(min-width: 720px)'])
       .subscribe((state: BreakpointState) => {

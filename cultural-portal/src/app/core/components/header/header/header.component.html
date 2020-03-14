@@ -18,11 +18,11 @@
         </mat-form-field>
     </ul>
     <div class='header__navigation_list-mobile' *ngIf='!showMobile'>
-        <button mat-button [matMenuTriggerFor]='menu'>Menu</button>
+        <button mat-button [matMenuTriggerFor]='menu'>{{'Menu' | translate : language}}</button>
         <mat-menu #menu='matMenu'>
             <a routerLink="" mat-menu-item>{{'About' | translate : language}}</a>
             <a routerLink="./authors/list" mat-menu-item>{{'List of Authors' | translate : language}}</a>
-            <a routerLink="./team/developers" mat-menu-item>{{'Team members' | translate : language}</a>
+            <a routerLink="./team/developers" mat-menu-item>{{'Team members' | translate : language}}</a>
             <a routerLink="./team/worklog" mat-menu-item>{{'Worklog' | translate : language}}</a>
             <a routerLink="" mat-menu-item>{{'Styleguide' | translate : language}}</a>
         </mat-menu>

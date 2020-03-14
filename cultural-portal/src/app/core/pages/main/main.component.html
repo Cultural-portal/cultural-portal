@@ -1,3 +1,13 @@
 <app-title></app-title>
-<app-description></app-description>
-<app-author-of-day></app-author-of-day>
+<app-description [title]='mainService.main.aboutUs.title'
+    [introduction]='mainService.main.aboutUs.introduction'
+    [aboutLiterature]='mainService.main.aboutUs.aboutLiterature'
+    [aboutPortal]='mainService.main.aboutUs.aboutPortal'>
+</app-description>
+<app-author-of-day [title]='mainService.main.authorOfDay.title'
+    [job]='mainService.main.authorOfDay.job'
+    [name]='mainService.main.authorOfDay.name'
+    [birthDate]='mainService.main.authorOfDay.birth'
+    [deathDate]='mainService.main.authorOfDay.death'
+    [moreBtn]='mainService.main.authorOfDay.moreBtn'>
+</app-author-of-day>

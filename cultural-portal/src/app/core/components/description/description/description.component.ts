@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
@@ -9,6 +9,10 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 export class DescriptionComponent implements OnInit {
 
   public showMobile: boolean;
+  @Input() public title: string;
+  @Input() public introduction: string;
+  @Input() public aboutLiterature: string;
+  @Input() public aboutPortal: string;
 
   constructor(public breakpointObserver: BreakpointObserver) { }
 
@@ -23,7 +27,6 @@ export class DescriptionComponent implements OnInit {
         this.showMobile = false;
       }
     });
-
   }
 
 }

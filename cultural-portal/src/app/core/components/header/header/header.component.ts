@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public onChangLang(val: Language): void {
-    console.log(val);
+
     this.stateService.language = val;
   }
 }
