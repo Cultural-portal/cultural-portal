@@ -18,7 +18,7 @@ export class RandomAuthorService {
     this.lang = Language.ru;
     this.randomAuthor();
     this.stateService.language$.subscribe(lang => {
-      console.log(lang);
+
       this.lang = lang;
       this.randomAuthor();
     });
@@ -26,7 +26,7 @@ export class RandomAuthorService {
 
   public randomAuthor(): void {
     let authorsList: Authors[];
-    console.log(this.lang);
+ 
     switch (this.lang) {
       case Language.ru: authorsList = this.authors.authorsRU; break;
       case Language.be: authorsList = this.authors.authorsBE; break;
