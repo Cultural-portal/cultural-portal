@@ -25,7 +25,8 @@ export class RandomAuthorService {
       'realName': `${this.authorOfDay.realSurname} ${this.authorOfDay.realName} ${this.authorOfDay.realPatronymic}`,
       'img': this.authorOfDay.img,
       'birth': this.authorOfDay.birth,
-      'death': this.authorOfDay.death
+      'death': this.authorOfDay.death,
+      'id': this.authorOfDay.id
     };
   }
 }
