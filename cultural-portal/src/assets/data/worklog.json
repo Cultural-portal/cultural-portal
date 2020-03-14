@@ -157,16 +157,36 @@
         "name": "Vlad Drozd",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "1.5",
+            "description": "Create project, project structure, base interfaces"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "2",
+            "description": "Developers page"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "1",
+            "description": "Developers service"
+          },
+          {
+            "hours": "1",
+            "description": "Connect all modules, configure routing"
+          },
+          {
+            "hours": "0.5",
+            "description": "Developers translation"
+          },
+          {
+            "hours": "0.5",
+            "description": "Styleguide page"
+          },
+          {
+            "hours": "0.5",
+            "description": "Linter errors fixes"
+          },
+          {
+            "hours": "0.2",
+            "description": "Another small improvements"
           }
         ]
       }
@@ -425,19 +445,39 @@
         ]
       },
       {
-        "name": "Vlad Drozd",
+        "name": "Владислав Дрозд",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "1.5",
+            "description": "Развернул проект, выстроил структуру проекта, создал начальные модули"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "2",
+            "description": "Страница разработчиков"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "1",
+            "description": "Сервис для страницы разработчиков"
+          },
+          {
+            "hours": "1",
+            "description": "Объеденил все модули, настроил роутинг"
+          },
+          {
+            "hours": "0.5",
+            "description": "Настроил перевод странице разработчиков"
+          },
+          {
+            "hours": "0.5",
+            "description": "Страница со styleguide"
+          },
+          {
+            "hours": "0.5",
+            "description": "Исправление ошибок линтера"
+          },
+          {
+            "hours": "0.2",
+            "description": "Другие мелкие доработки"
           }
         ]
       }
@@ -700,19 +740,39 @@
         ]
       },
       {
-        "name": "Vlad Drozd",
+        "name": "Уладзіслаў Дрозд",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "1.5",
+            "description": "Разгарнуў праект, пабудаваў структуру праекта, стварыў пачатковыя модулі"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "2",
+            "description": "Старонка распрацоўшчыкаў"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "1",
+            "description": "Сэрвіс для старонкі распрацоўшчыкаў"
+          },
+          {
+            "hours": "1",
+            "description": "Аб'ядналі ўсе модулі, наладзіў роўтынг"
+          },
+          {
+            "hours": "0.5",
+            "description": "Наладзіў пераклад старонцы распрацоўшчыкаў"
+          },
+          {
+            "hours": "0.5",
+            "description": "Старонка са styleguide"
+          },
+          {
+            "hours": "0.5",
+            "description": "Выпраўленне памылак лінтэра"
+          },
+          {
+            "hours": "0.2",
+            "description": "Іншыя дробныя дапрацоўкі"
           }
         ]
       }
