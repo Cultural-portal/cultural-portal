@@ -46,7 +46,12 @@
           },
           {
             "hours": "2h",
-            "description": " refactor component author list & author info for responsive markup"
+            "description": "refactor component author list & author info for responsive markup"
+          }
+          ,
+          {
+            "hours": "3h",
+            "description": "refactoring routing in author list & author info component"
           }
         ]
       },
@@ -123,16 +128,28 @@
         "name": "Ulyana Bychkouskaya",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "3h",
+            "description": "add main page"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "1h",
+            "description": "add service for a random author"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "2h",
+            "description": "home page translation"
+          },
+          {
+            "hours": "7h",
+            "description": "design of the entire portal"
+          },
+          {
+            "hours": "2h",
+            "description": "mobile version of the entire portal"
+          },
+          {
+            "hours": "0.5h",
+            "description": "json-file for the main page"
           }
         ]
       },
@@ -140,16 +157,24 @@
         "name": "Timur Yermakou",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "5h",
+            "description": "add worklog page components and models"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "3h",
+            "description": "add worklog page service and resolver"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "2h",
+            "description": "add correct data"
+          },
+          {
+            "hours": "2h",
+            "description": "translate data"
+          },
+          {
+            "hours": "2h",
+            "description": "bug fixing"
           }
         ]
       },
@@ -157,41 +182,45 @@
         "name": "Vlad Drozd",
         "activityList": [
           {
-            "hours": "1.5",
+            "hours": "1.5h",
             "description": "Create project, project structure, base interfaces"
           },
           {
-            "hours": "2",
+            "hours": "2h",
             "description": "Developers page"
           },
           {
-            "hours": "1",
+            "hours": "1h",
             "description": "Developers service"
           },
           {
-            "hours": "1",
+            "hours": "1h",
             "description": "Connect all modules, configure routing"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5h",
             "description": "Developers translation"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5h",
             "description": "Styleguide page"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5h",
             "description": "Linter errors fixes"
           },
           {
-            "hours": "0.2",
+            "hours": "0.2h",
             "description": "Another small improvements"
           }
         ]
       }
     ],
-    "mainDifficulties": [],
+    "mainDifficulties": [
+      "Translation",
+      "Merge conflicts",
+      "Problems with the pull requests"
+    ],
     "evaluation": [
       {
         "scopeTitle": "Min scope - 50",
@@ -296,7 +325,7 @@
     "evaluationTitle": "Оценка:",
     "worklogs": [
       {
-        "name": "Uladzimir Kazak",
+        "name": "Владимир Казак",
         "activityList": [
           {
             "hours": "5ч",
@@ -313,7 +342,7 @@
         ]
       },
       {
-        "name": "Nikita Moiseichyk",
+        "name": "Никита Мойсейчик",
         "activityList": [
           {
             "hours": "8ч",
@@ -338,11 +367,15 @@
           {
             "hours": "2ч",
             "description": "переделал компонент список авторов и информация об авторе для гибкой верстки"
+          },
+          {
+            "hours": "3ч",
+            "description": "рефакторинг маршрутизации в списке авторов и компоненте информации об авторе"
           }
         ]
       },
       {
-        "name": "Aliaksandr Babtsou",
+        "name": "Александр Бобцов",
         "activityList": [
           {
             "hours": "10м",
@@ -411,19 +444,31 @@
         ]
       },
       {
-        "name": "Ulyana Bychkouskaya",
+        "name": "Ульяна Бычковская",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "3ч",
+            "description": "главная страница"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "1",
+            "description": "сервис для рандомного автора"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "2ч",
+            "description": "перевод главной страницы"
+          },
+          {
+            "hours": "7ч",
+            "description": "дизайн всего портала"
+          },
+          {
+            "hours": "2ч",
+            "description": "мобильная версия всего порталаl"
+          },
+          {
+            "hours": "0.5ч",
+            "description": "json-файл для главной страницы"
           }
         ]
       },
@@ -431,16 +476,24 @@
         "name": "Тимур Ермаков",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "5ч",
+            "description": "добавил компоненты и модели страницы рабочего журнала"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "3ч",
+            "description": "добавил service страницы журнала и resolver"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "2ч",
+            "description": "добавил правильные данные"
+          },
+          {
+            "hours": "2ч",
+            "description": "перевод данных"
+          },
+          {
+            "hours": "2ч",
+            "description": "устранение багов"
           }
         ]
       },
@@ -448,44 +501,44 @@
         "name": "Владислав Дрозд",
         "activityList": [
           {
-            "hours": "1.5",
+            "hours": "1.5ч",
             "description": "Развернул проект, выстроил структуру проекта, создал начальные модули"
           },
           {
-            "hours": "2",
+            "hours": "2ч",
             "description": "Страница разработчиков"
           },
           {
-            "hours": "1",
+            "hours": "1ч",
             "description": "Сервис для страницы разработчиков"
           },
           {
-            "hours": "1",
+            "hours": "1ч",
             "description": "Объеденил все модули, настроил роутинг"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5ч",
             "description": "Настроил перевод странице разработчиков"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5ч",
             "description": "Страница со styleguide"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5ч",
             "description": "Исправление ошибок линтера"
           },
           {
-            "hours": "0.2",
+            "hours": "0.2ч",
             "description": "Другие мелкие доработки"
           }
         ]
       }
     ],
     "mainDifficulties": [
-      "dsvsdv",
-      "sdvsdvsd",
-      "sdvsdvsdvsdv"
+      "Перевод",
+      "Конфликты слияния",
+      "Проблемы с пулл запросами"
     ],
     "evaluation": [
       {
@@ -591,7 +644,7 @@
     "evaluationTitle": "Адзнака:",
     "worklogs": [
       {
-        "name": "Uladzimir Kazak",
+        "name": "Уладзiмiр Казак",
         "activityList": [
           {
             "hours": "5ч",
@@ -608,7 +661,7 @@
         ]
       },
       {
-        "name": "Nikita Moiseichyk",
+        "name": "Мікіта Майсейчык",
         "activityList": [
           {
             "hours": "8ч",
@@ -633,11 +686,15 @@
           {
             "hours": "2ч",
             "description": "перарабіў кампанент спіс аўтараў і інфармацыя аб аўтары для гнуткай вёрсткі"
+          },
+          {
+            "hours": "3ч",
+            "description": "рэфактарынг маршрутызацыі ў спісе аўтараў і кампаненце інфармацыі пра аўтара"
           }
         ]
       },
       {
-        "name": "Aliaksandr Babtsou",
+        "name": "Аляксандр Бабцоў",
         "activityList": [
           {
             "hours": "10х",
@@ -706,19 +763,31 @@
         ]
       },
       {
-        "name": "Ulyana Bychkouskaya",
+        "name": "Ульяна Бычкоўская",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "3ч",
+            "description": "Галоўная старонка"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "1",
+            "description": "сэрвіс для рандомные аўтара"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "2ч",
+            "description": "пераклад галоўнай старонкі"
+          },
+          {
+            "hours": "7ч",
+            "description": "дызайн усяго партала"
+          },
+          {
+            "hours": "2ч",
+            "description": "мабільная версія усяго портала"
+          },
+          {
+            "hours": "0.5ч",
+            "description": "json-файл для галоўнай старонкі"
           }
         ]
       },
@@ -726,16 +795,24 @@
         "name": "Цімур Ермакоў",
         "activityList": [
           {
-            "hours": "5",
-            "description": "add some details author"
+            "hours": "5ч",
+            "description": "дадаў кампаненты і мадэлі старонкі рабочага часопіса"
           },
           {
-            "hours": "5",
-            "description": "add video and map show"
+            "hours": "3ч",
+            "description": "дадаў service старонкі часопіса і resolver"
           },
           {
-            "hours": "3",
-            "description": "refactor authors module"
+            "hours": "2ч",
+            "description": "дадаў правільныя дадзеныя"
+          },
+          {
+            "hours": "2ч",
+            "description": "пераклад дадзеных"
+          },
+          {
+            "hours": "2ч",
+            "description": "ліквідацыю багаў"
           }
         ]
       },
@@ -743,44 +820,44 @@
         "name": "Уладзіслаў Дрозд",
         "activityList": [
           {
-            "hours": "1.5",
+            "hours": "1.5ч",
             "description": "Разгарнуў праект, пабудаваў структуру праекта, стварыў пачатковыя модулі"
           },
           {
-            "hours": "2",
+            "hours": "2ч",
             "description": "Старонка распрацоўшчыкаў"
           },
           {
-            "hours": "1",
+            "hours": "1ч",
             "description": "Сэрвіс для старонкі распрацоўшчыкаў"
           },
           {
-            "hours": "1",
+            "hours": "1ч",
             "description": "Аб'ядналі ўсе модулі, наладзіў роўтынг"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5ч",
             "description": "Наладзіў пераклад старонцы распрацоўшчыкаў"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5ч",
             "description": "Старонка са styleguide"
           },
           {
-            "hours": "0.5",
+            "hours": "0.5ч",
             "description": "Выпраўленне памылак лінтэра"
           },
           {
-            "hours": "0.2",
+            "hours": "0.2ч",
             "description": "Іншыя дробныя дапрацоўкі"
           }
         ]
       }
     ],
     "mainDifficulties": [
-      "dsvsdv",
-      "sdvsdvsd",
-      "sdvsdvsdvsdv"
+      "Пераклад",
+      "Канфлікты зліцця",
+      "Праблемы з пулл запытамі"
     ],
     "evaluation": [
       {
