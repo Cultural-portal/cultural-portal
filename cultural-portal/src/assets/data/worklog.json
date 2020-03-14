@@ -197,7 +197,7 @@
         "scopeTitle": "Min scope - 50",
         "requirementsList": [
           {
-            "isDone": "false",
+            "isDone": "true",
             "description": "10 Main page + page with a list of authors + author's page (only pages with content without widgets)"
           },
           {
@@ -267,11 +267,11 @@
             "description": "10 Confidence of the project presentation"
           },
           {
-            "isDone": "true",
+            "isDone": "false",
             "description": "10 Project is made using scully"
           },
           {
-            "isDone": "true",
+            "isDone": "false",
             "description": "10 Contentful / netlify cms / other cms is used for content management"
           },
           {
@@ -492,7 +492,7 @@
         "scopeTitle": "Минимальный уровень - 50",
         "requirementsList": [
           {
-            "isDone": "false",
+            "isDone": "true",
             "description": "10 Главная страница + страница со списком авторов + страница автора (только страницы с контентом без виджетов)"
           },
           {
@@ -562,11 +562,11 @@
             "description": "10 Уверенность в презентации проекта"
           },
           {
-            "isDone": "true",
+            "isDone": "false",
             "description": "10 Проект сделан с использованием scully"
           },
           {
-            "isDone": "true",
+            "isDone": "false",
             "description": "10 Contentful / Netlify CMS / другие CMS используется для управления контентом"
           },
           {
@@ -787,7 +787,7 @@
         "scopeTitle": "Мінімальны ўзровень - 50",
         "requirementsList": [
           {
-            "isDone": "false",
+            "isDone": "true",
             "description": "10 Галоўная старонка + старонка са спісам аўтараў + старонка аўтара (толькі старонкі з кантэнтам без віджэтаў)"
           },
           {
@@ -857,11 +857,11 @@
             "description": "10 Упэўненасць у прэзентацыі праекта"
           },
           {
-            "isDone": "true",
+            "isDone": "false",
             "description": "10 Праект зроблены з выкарыстаннем scully"
           },
           {
-            "isDone": "true",
+            "isDone": "false",
             "description": "10 Contentful / Netlify CMS / іншыя CMS выкарыстоўваецца для кіравання кантэнтам"
           },
           {
